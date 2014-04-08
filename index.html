@@ -8,27 +8,135 @@
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
 
+	<script type="text/javascript">
 
+	</script>
+	<!--Custom styles-->
+	<style type="text/css">
+	/**
+ * html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+ * Richard Clark (http://richclarkdesign.com)
+ * http://cssreset.com
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+nav ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+/****END OF RESET*****/
+		
+#indexPage .ui-content {
+	padding: 0 0 0 0;
+}
+
+.carousel li{
+	width: 100%;
+	height: 320px;
+}
+.slide1 {
+	background: url('assets/slide1-m.jpg');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+		
+
+		
+
+	</style>
 	
 </head>
 <body>
-	<div data-role="page">
+	<div data-role="page" id="indexPage">
 		<!--Panel includes navmenu menu-->
 		<nav data-role="panel" id="left-panel">
 			<ul data-role="listview">
-				<li data-role="list-divider"><h2>Shop</h2></li>
-				<li><a href="#">Bras</a></li>
-				<li><a href="#">Sale</a></li>
-				<li data-role="list-divider"><h2>Learn</h2></li>
-				<li><a href="#">How to fit a bra</a></li>
-				<li><a href="#">How to find your bra size</a></li>
-				<li><a href="#">Does your bra fit you well?</a></li>
-				<li data-role="list-divider"><h2>Let us help you!</h2></li>
+				<li><a href="#">Shop bras</a></li>
+				<li data-role="list-divider"><h2>Bra Fitting</h2></li>
+				<li><a href="#">Sizing</a></li>
+				<li><a href="#">Fit check</a></li>
+				<li data-role="list-divider"><h2>Customer Care</h2></li>
                 <li><a href="#">Shipping</a></li>
                 <li><a href="#">Returns & Exchange</a></li>
-                <li><a href="#">How we make bras</a></li>
+                <li data-role="list-divider"><h2>About Us</h2></li>
                 <li><a href="#">Our story</a></li>
-            	<li><a href="#">Live a Wellfitting Life ;)</a></li>
+            	<li><a href="#">Blog</a></li>
             </ul>
 	    </nav><!-- /panel -->
 			
@@ -38,12 +146,48 @@
 		</header> <!-- /header-->
 
 		<div class="ui-content">
+			<div id="firstfold" class="carousel">
+				<ul class="slides">
+					<li class="slide1"></li>
+				</ul>
+				<h1>Sexy bras for full bust.</h1>
+				<h2>130 sizes. Instant hourglass silhouette. Unretouched photos.</h2>
+				<a href="#" class="ui-btn">Shop now</a>
+			</div>
+			
+			<section class="fold-b">
+				<h2>Real Women, Real Pictures</h2>
+				<p>Want to get featured in our gallery? <a href="mailto:hello@wellfitting.com">Send us your picture or add #wellfitting on Instagram!</p>
+				<div class="ui-grid-c">
+					<figure class="ui-block-a">
+
+						<img src="assets/real1.jpg">
+					</figure>
+					<figure class="ui-block-b">
+						<img src="assets/real1.jpg">
+					</figure>
+					<figure class="ui-block-c">
+						<img src="assets/real1.jpg">
+					</figure>
+					<figure class="ui-block-d">
+						<img src="assets/real1.jpg">
+					</figure>
+				</div>
+			</section>
+
+			<section class="fold-c">
+				<h1>Do you wear a correct bra size?</h1>
+				<a href="#" class="ui-btn">Check your fit now!</a>
+			</section>
+			
 
 		</div><!-- /ui-content-->
 
 		<footer data-role="footer">
 			<div class="ui-grid-solo ui-responsive">
-    			<div class="ui-block-a"><input type="button" value="More"></div>
+    			<div class="ui-block-a">
+    				<a href="http://facebook.com/wellfitting">Facebook</a>
+    			</div>
 			</div>
 			<div class="ui-grid-b ui-responsive">
 			    <div class="ui-block-a">
