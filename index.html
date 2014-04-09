@@ -79,7 +79,22 @@
 	background: transparent;
 	border: solid 1px #fff;
 }
+/*Real photos*/
+#realphotos img {
+	width: 100%;
+}
 
+/*Custom grid collapse*/
+/* collapse ui-grid-c to 2 per row below 40em (640px) */
+@media all and (max-width: 35em) {
+	.ui-grid-c .ui-block-a,
+	.ui-grid-c .ui-block-b,
+	.ui-grid-c .ui-block-c,
+	.ui-grid-c .ui-block-d{
+		width: 50%;
+		float: left;
+	}
+}
 
 
 	</style>
@@ -154,7 +169,7 @@ $(document).ready(function() {
 			<section class="fold-b">
 				<h2>Real Women, Real Pictures</h2>
 				<p>Want to get featured in our gallery? <a href="mailto:hello@wellfitting.com">Send us your picture or add #wellfitting on Instagram!</p>
-				<div class="ui-grid-c">
+				<div class="ui-grid-c" id="realphotos">
 					<figure class="ui-block-a">
 						<img src="assets/real1.jpg">
 					</figure>
