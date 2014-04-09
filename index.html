@@ -126,7 +126,8 @@ $(document).ready(function() {
 	
 </head>
 <body>
-	<div data-role="page" id="indexPage" data-theme="b">
+	<!--Home Page-->
+	<div data-role="page" id="indexPage" data-theme="a">
 		<!--Panel for navmenu-->
 		<nav data-role="panel" data-display="push" id="left-panel">
 			<ul data-role="listview">
@@ -144,7 +145,10 @@ $(document).ready(function() {
 	    </nav><!-- /panel -->
 	    <!--Panel for shopping bag-->
 	    <nav data-role="panel" data-position="right" data-display="push" id="right-panel">
-			Your bag is empty
+	    	 <ul data-role="listview" data-theme="a" data-icon="false">
+            	<li data-icon="arrow-l"><a href="#" data-rel="close">Back to shopping</a></li>
+            	<li data-icon="arrow-r"><a href="">Checkout</a></li>
+        	</ul>
 	    </nav><!-- /panel -->
 			
 		<header data-role="header">
@@ -253,5 +257,5 @@ $(document).ready(function() {
 		    	</div>
 			</div><!-- /grid-b -->
 		</footer><!-- /footer-->
-	</div>
+	</div><!-- /home page-->
 </body>
