@@ -8,6 +8,11 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+	<!--Owl Carousel-->
+	<!-- Important Owl stylesheet -->
+	<link rel="stylesheet" href="assets/owl.carousel.css"> 
+	<link rel="stylesheet" href="assets/owl.theme.css">
+	<script src="assets/owl.carousel.js"></script>
 	<!--CSS RESET-->
 	<link rel="stylesheet" type="text/css" href="assets/reset.css"/>
 	<!--Custom styles-->
@@ -18,17 +23,87 @@
 	padding: 0 0 0 0;
 }
 
-.carousel li{
+/*--First fold carousel--*/
+#carousel-home .item{
 	width: 100%;
 	height: 320px;
-}
-.slide1 {
-	background: url('assets/slide1-m.jpg');
-	background-position: 0 0;
+	background-color: black;
+	background-size: contain;
 	background-repeat: no-repeat;
-	background-size: 100%;
 }
+
+#carousel-home .item1 {
+	background-image: url('assets/georgia.jpg');
+	background-position: top left;
+}
+
+#carousel-home .item2 {
+	background-image: url('assets/nevada.jpg');
+	background-position: center center;
+}
+
+#carousel-home .item3 {
+	background-image: url('assets/nude-tshirt.jpg');
+	background-position: center center;
+}
+
+#carousel-home .item4 {
+	background-image: url('assets/arizona.jpg');
+	background-position: top right;
+}
+
+#carousel-home .tagline {
+	width: 50%;
+	background-color: rgba(255,255,255,.5);
+	float: right;
+	margin-top: 100px;
+	padding: 20px;
+}
+
+/* You might want to move it to owl-theme.css */
+.owl-theme .owl-controls{
+	margin-top: -30px;
+	text-align: center;
+	margin-bottom: 30px;	
+}
+
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: transparent;
+	border: solid 1px #fff;
+}
+
+
+
 	</style>
+	<script type="text/javascript">
+$(document).ready(function() {
+//Launch carouser on mainfold 
+	$("#carousel-home").owlCarousel({
+		items: 1,
+    	itemsScaleUp: true,
+    	itemsDesktop : [1199,1],
+    	itemsDesktopSmall : [980,1],
+    	itemsTablet: [768,1],
+    	itemsMobile : [479,1],
+    	//Basic Speeds
+	    slideSpeed : 200,
+	    paginationSpeed : 800,
+	    rewindSpeed : 1000,
+	 
+	    //Autoplay
+	    autoPlay : false,
+	    stopOnHover : true,
+	  	});
+});
+	</script>
 	
 </head>
 <body>
@@ -56,11 +131,23 @@
 
 		<div class="ui-content">
 			<div id="firstfold" class="carousel">
-				<h1>Sexy bras for full bust.</h1>
-				<h2>130 sizes. Instant hourglass silhouette. Unretouched photos.</h2>
-				<ul class="slides">
-					<li class="slide1"></li>
-				</ul>
+				<div id="carousel-home" class="owl-carousel">
+				  	<div class="item item1">
+				  		<div class="tagline">
+					  		<h1>Sexy bras for full bust.</h1>
+							<h2>130 sizes. Instant hourglass silhouette. Unretouched photos.</h2>
+						</div>
+			  		</div>
+				  	<div class="item item2">
+			  		</div>
+			  		<div class="item item3">
+				  		
+			  		</div>
+			  		<div class="item item4">
+				  		
+			  		</div>
+				</div>
+				
 				<a href="#" class="ui-btn">Shop now</a>
 			</div>
 			
