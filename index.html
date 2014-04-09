@@ -123,8 +123,8 @@ $(document).ready(function() {
 </head>
 <body>
 	<div data-role="page" id="indexPage">
-		<!--Panel includes navmenu menu-->
-		<nav data-role="panel" id="left-panel">
+		<!--Panel for navmenu-->
+		<nav data-role="panel" data-display="push" id="left-panel">
 			<ul data-role="listview">
 				<li><a href="#">Shop bras</a></li>
 				<li data-role="list-divider"><h2>Bra Fitting</h2></li>
@@ -138,10 +138,15 @@ $(document).ready(function() {
             	<li><a href="#">Blog</a></li>
             </ul>
 	    </nav><!-- /panel -->
+	    <!--Panel for shopping bag-->
+	    <nav data-role="panel" data-position="right" data-display="push" id="right-panel">
+			Your bag is empty
+	    </nav><!-- /panel -->
 			
 		<header data-role="header">
 			<h1>Wellfitting</h1>
 			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+			<a href="#right-panel" data-icon="shop" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Your bag</a>
 		</header> <!-- /header-->
 
 		<div class="ui-content">
@@ -168,7 +173,7 @@ $(document).ready(function() {
 			
 			<section class="fold-b">
 				<h2>Real Women, Real Pictures</h2>
-				<p>Want to get featured in our gallery? <a href="mailto:hello@wellfitting.com">Send us your picture or add #wellfitting on Instagram!</p>
+				<p>Want to get featured in our gallery? <a href="mailto:hello@wellfitting.com">Send us your picture</a> or add #wellfitting on Instagram!</p>
 				<div class="ui-grid-c" id="realphotos">
 					<figure class="ui-block-a">
 						<img src="assets/real1.jpg">
