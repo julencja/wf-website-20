@@ -8,6 +8,9 @@
 		display: none;
 	}
 
+a.active{
+	text-decoration: underline;
+}
 /*--First fold carousel--*/
 #carousel-home .item{
 	width: 100%;
@@ -86,7 +89,7 @@
 
 @media all and (min-width: 60em) {
 	h1 {color: red;}
-	.hide-on-wide {
+	.hide-on-desktop {
 		display: none !important;
 	}
 
