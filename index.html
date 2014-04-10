@@ -18,116 +18,19 @@
 	<script src="assets/owl.carousel.js"></script>
 	<!--CSS RESET-->
 	<link rel="stylesheet" type="text/css" href="assets/reset.css"/>
-	<!--Custom styles-->
-	<style type="text/css">
-/**CUSTOM CSS beyond jQueryMobile**/
-/*to be moved to a separate file when done*/		
-#indexPage .ui-content {
-	padding: 0 0 0 0;
-}
-
-/*--First fold carousel--*/
-#carousel-home .item{
-	width: 100%;
-	height: 320px;
-	background-color: black;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-
-#carousel-home .item1 {
-	background-image: url('assets/georgia.jpg');
-	background-position: top left;
-}
-
-#carousel-home .item2 {
-	background-image: url('assets/nevada.jpg');
-	background-position: center center;
-}
-
-#carousel-home .item3 {
-	background-image: url('assets/nude-tshirt.jpg');
-	background-position: center center;
-}
-
-#carousel-home .item4 {
-	background-image: url('assets/arizona.jpg');
-	background-position: top right;
-}
-
-#carousel-home .tagline {
-	width: 50%;
-	background-color: rgba(255,255,255,.5);
-	float: right;
-	margin-top: 100px;
-	padding: 20px;
-}
-
-/* You might want to move it to owl-theme.css */
-.owl-theme .owl-controls{
-	margin-top: -30px;
-	text-align: center;
-	margin-bottom: 30px;	
-}
-
-.owl-theme .owl-controls .owl-page span {
-	display: block;
-	width: 10px;
-	height: 10px;
-	margin: 5px 7px;
-	filter: Alpha(Opacity=50);
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
-	background: transparent;
-	border: solid 1px #fff;
-}
-/*Real photos*/
-#realphotos img {
-	width: 100%;
-}
-
-/*Custom grid collapse*/
-/* collapse ui-grid-c to 2 per row below 40em (640px) */
-@media all and (max-width: 35em) {
-	.ui-grid-c .ui-block-a,
-	.ui-grid-c .ui-block-b,
-	.ui-grid-c .ui-block-c,
-	.ui-grid-c .ui-block-d{
-		width: 50%;
-		float: left;
-	}
-}
+	<!--Custom style-->
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<!--Custom JS-->
+	<script src="assets/js.js" type="text/javascript"></script>
 
 
-	</style>
-	<script type="text/javascript">
-$(document).ready(function() {
-//Launch carouser on mainfold 
-	$("#carousel-home").owlCarousel({
-		items: 1,
-    	itemsScaleUp: true,
-    	itemsDesktop : [1199,1],
-    	itemsDesktopSmall : [980,1],
-    	itemsTablet: [768,1],
-    	itemsMobile : [479,1],
-    	//Basic Speeds
-	    slideSpeed : 200,
-	    paginationSpeed : 800,
-	    rewindSpeed : 1000,
-	 
-	    //Autoplay
-	    autoPlay : false,
-	    stopOnHover : true,
-	  	});
-});
-	</script>
 	
 </head>
-<body data-theme="a">
-	<div data-role="page" id="indexPage">
+<body>
+	<!--Home Page-->
+	<div data-role="page" id="indexPage" data-theme="a" class="">
 		<!--Panel for navmenu-->
-		<nav data-role="panel" data-display="push" id="left-panel" data-theme="c">
+		<nav data-role="panel" data-display="push" id="left-panel" class="hide-on-mobile">
 			<ul data-role="listview">
 				<li><a href="#">Shop bras</a></li>
 				<li data-role="list-divider"><h2>Bra Fitting</h2></li>
@@ -143,21 +46,43 @@ $(document).ready(function() {
 	    </nav><!-- /panel -->
 	    <!--Panel for shopping bag-->
 	    <nav data-role="panel" data-position="right" data-display="push" id="right-panel">
-			Your bag is empty
+	    	 <ul data-role="listview" data-theme="a" data-icon="false">
+            	<li data-icon="arrow-l"><a href="#" data-rel="close">Back to shopping</a></li>
+            	<li data-icon="arrow-r"><a href="">Checkout</a></li>
+        	</ul>
 	    </nav><!-- /panel -->
 			
-		<header data-role="header" data-theme="a">
+		<header data-role="header" data-position-fixed="true">
 			<h1>Wellfitting</h1>
-			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="hide-on-wide">Menu</a>
 			<a href="#right-panel" data-icon="shop" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Your bag</a>
+
 		</header> <!-- /header-->
 
 		<div class="ui-content">
+			<!--Navigation for screens 60em+-->
+			<nav class="hide-on-mobile" id="nav-desktop">
+				<div class="linkgroup">
+					<a href="#">Link1 group 1</a>
+					<a href="#">Link2 group 1</a>
+				</div>
+
+				<div class="linkgroup">
+					<a href="#">Link group 2</a>
+					<a href="#">Link group 2</a>
+				</div>
+
+				<div class="linkgroup floatright">
+					<a href="#">Link group 3</a>
+					<a href="#">Link group 3</a>
+				</div>
+			</nav>
+			<!--/navmenu-->
 			<div id="firstfold" class="carousel">
 				<div id="carousel-home" class="owl-carousel">
 				  	<div class="item item1">
 				  		<div class="tagline">
-					  		<h1>Sexy bras for full bust.</h1>
+					  		<h1><a href="http://gazeta.pl">Sexy bras for full bust.</a></h1>
 							<h2>130 sizes. Instant hourglass silhouette. Unretouched photos.</h2>
 						</div>
 			  		</div>
@@ -171,7 +96,7 @@ $(document).ready(function() {
 			  		</div>
 				</div>
 				
-				<a href="#" class="ui-btn">Shop now</a>
+				<a href="#" class="ui-btn call-to-action">Shop now</a>
 			</div>
 			
 			<section class="fold-b">
@@ -195,12 +120,13 @@ $(document).ready(function() {
 
 			<section class="fold-c">
 				<h1>Do you wear a correct bra size?</h1>
-				<a href="#" class="ui-btn">Check your fit now!</a>
+				<a href="#" class="ui-btn call-to-action">Check your fit now!</a>
 			</section>
 			
 
 		</div><!-- /ui-content-->
 
+<<<<<<< HEAD
 		<footer data-role="footer" data-theme="a">
 			<div class="ui-grid-solo ui-responsive">
     			<div class="ui-block-a">
@@ -228,18 +154,60 @@ $(document).ready(function() {
 			    			<li> <a href="">Need help?</a></li>
 			    		</ul>
 			    	</div>
+=======
+		<footer data-role="footer">
+			<div class="footer-container">
+				<div class="ui-grid-solo ui-responsive">
+	    			<div class="ui-block-a">
+	    				<a href="http://facebook.com/wellfitting">Facebook</a>
+	    			</div>
+>>>>>>> 79be2ef594720f7c0f63b5f6bbeefd79aa2f214e
 				</div>
-			    <div class="ui-block-c">
-			    	<div class="ui-bar">
-			    		<h3>Wellfitting</h3>
-			    		<ul>
-			    			<li><a href="">BraTasting Party at your home</a></li>
-			    			<li> <a href="">About</a></li>
-			    			<li> <a href="">Blog</a></li>
-			    		</ul>
+				<div class="ui-grid-b ui-responsive">
+				    <div class="ui-block-a">
+				    	<div class="ui-bar">
+				    		<h3>Sign up to our Newsletter</h3>
+				    		<p>And be the first to know about new products and exclusive sdeals!</p>
+				    		<!-- Begin MailChimp Signup Form -->
+							<div id="mc_embed_signup">
+								<form action="http://wellfitting.us4.list-manage.com/subscribe/post?u=1dc5a2a00aab26500b4caacdd&amp;id=8c4e1f1c99" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+								<div class="mc-field-group">
+									<label  class="ui-hidden-accessible" for="mce-EMAIL">Email Address</label>
+									<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Your email">
+								</div>
+								<div id="mce-responses" class="clear">
+									<div class="response" id="mce-error-response" style="display:none"></div>
+									<div class="response" id="mce-success-response" style="display:none"></div>
+								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+							    <div style="position: absolute; left: -5000px;"><input type="text" name="b_1dc5a2a00aab26500b4caacdd_8c4e1f1c99" value=""></div>
+								<div class="clear"><button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="ui-shadow ui-btn ui-corner-all">Subscribe!</button></div>
+								</form>
+							</div>
+							<!--End mc_embed_signup-->
+			    		</div>
+				    </div>
+				    <div class="ui-block-b">
+				    	<div class="ui-bar">
+				    		<h3>Support</h3>
+				    		<ul>
+				    			<li> <a href="">Shipping Policy</a></li>
+				    			<li> <a href="">Exchange & Returns</a></li>
+				    			<li> <a href="">Need help?</a></li>
+				    		</ul>
+				    	</div>
+					</div>
+				    <div class="ui-block-c">
+				    	<div class="ui-bar">
+				    		<h3>Wellfitting</h3>
+				    		<ul>
+				    			<li><a href="">BraTasting Party at your home</a></li>
+				    			<li> <a href="">About</a></li>
+				    			<li> <a href="">Blog</a></li>
+				    		</ul>
+				    	</div>
 			    	</div>
-		    	</div>
-			</div><!-- /grid-b -->
+				</div><!-- /grid-b -->
+			</div>
 		</footer><!-- /footer-->
-	</div>
+	</div><!-- /home page-->
 </body>
