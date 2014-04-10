@@ -1,43 +1,4 @@
 /**CUSTOM CSS beyond jQueryMobile**/
-/* TYPOGRAPHY */
-body {
-	font-family: 'Lato', Helvetica, sans-serif;
-}
-a, a:hover, a:active, a:visited {
-	text-decoration: none;
-	font-variant: small-caps;
-}
-#nav-desktop li {
-	display: inline-block;
-}
-#nav-desktop a, #nav-desktop a:visited {
-	color: #000;
-	font-weight: 400;
-}
-#nav-desktop a:hover, #nav-desktop a:active {
-	opacity: .6;
-}
-p {
-	font-weight: 400;
-	text-shadow: none;
-}
-h1 {
-	font-family: 'Playfair Display', Georgia, serif;
-	font-size: 200%;
-	font-weight: 700;
-	text-align: center;
-	line-height: 1.5;
-	text-shadow: none;
-}
-h2 {
-	text-align: center;
-	line-height: 2;
-	font-weight: 700;
-	font-size: 150%;
-	text-shadow: none;
-}
-h3
-
 /*to be moved to a separate file when done*/		
 #indexPage .ui-content {
 	padding: 0 0 0 0;
@@ -48,13 +9,8 @@ h3
 	}
 
 a.active{
-	text-decoration: none;
+	text-decoration: underline;
 }
-
-section{
-	width: 100%;
-}
-
 /*--First fold carousel--*/
 #carousel-home .item{
 	width: 100%;
@@ -90,8 +46,8 @@ section{
 	float: right;
 	margin-top: 100px;
 	padding: 20px;
-	font-variant: normal;
 }
+
 /* You might want to move it to owl-theme.css */
 .owl-theme .owl-controls{
 	margin-top: -30px;
@@ -132,6 +88,7 @@ section{
 }
 
 @media all and (min-width: 60em) {
+	h1 {color: red;}
 	.hide-on-desktop {
 		display: none !important;
 	}
@@ -147,7 +104,11 @@ section{
 
 	/*Navigation menu on desktop only*/
 	#nav-desktop{
-		
+		position: relative;
+		display: block;
+		float: left;
+		width: 100%;
+		z-index: 9999;
 	}
 
 	#nav-desktop a {
