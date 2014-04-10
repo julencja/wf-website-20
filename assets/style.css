@@ -1,18 +1,18 @@
 /**CUSTOM CSS beyond jQueryMobile**/
 /* TYPOGRAPHY */
 body {
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Maven Pro', Helvetica, sans-serif;
 }
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
-	font-variant: small-caps;
 }
 #nav-desktop li {
 	display: inline-block;
 }
 #nav-desktop a, #nav-desktop a:visited {
-	color: #000;
+	color: #000;	
 	font-weight: 400;
+	font-variant: small-caps;
 }
 #nav-desktop a:hover, #nav-desktop a:active {
 	opacity: .6;
@@ -24,7 +24,7 @@ p {
 h1 {
 	font-family: 'Playfair Display', Georgia, serif;
 	font-size: 200%;
-	font-weight: 700;
+	font-weight: 900;
 	text-align: center;
 	line-height: 1.5;
 	text-shadow: none;
@@ -35,6 +35,7 @@ h2 {
 	font-weight: 700;
 	font-size: 150%;
 	text-shadow: none;
+	font-variant: small-caps;
 }
 h3
 
@@ -95,11 +96,14 @@ header .logo img{
 
 #carousel-home .tagline {
 	width: 50%;
-	background-color: rgba(255,255,255,.5);
+	color: #fff;
 	float: right;
 	margin-top: 100px;
 	padding: 20px;
 	font-variant: normal;
+}
+#carousel-home .tagline h2 {
+
 }
 /* You might want to move it to owl-theme.css */
 .owl-theme .owl-controls{
@@ -205,7 +209,7 @@ header .logo img{
 	}
 
 	/*Center folds below on the desktop*/
-	.fold-b, .fold-c, .footer-container {
+	.fold-c, .footer-container {
 		width: 60em;
 		margin: 0 auto;
 	}
