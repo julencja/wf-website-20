@@ -1,0 +1,141 @@
+/**CUSTOM CSS beyond jQueryMobile**/
+/*to be moved to a separate file when done*/		
+#indexPage .ui-content {
+	padding: 0 0 0 0;
+}
+
+.hide-on-mobile{
+		display: none;
+	}
+
+/*--First fold carousel--*/
+#carousel-home .item{
+	width: 100%;
+	height: 320px;
+	background-color: black;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#carousel-home .item1 {
+	background-image: url('georgia.jpg');
+	background-position: top left;
+}
+
+#carousel-home .item2 {
+	background-image: url('nevada.jpg');
+	background-position: center center;
+}
+
+#carousel-home .item3 {
+	background-image: url('nude-tshirt.jpg');
+	background-position: center center;
+}
+
+#carousel-home .item4 {
+	background-image: url('arizona.jpg');
+	background-position: top right;
+}
+
+#carousel-home .tagline {
+	width: 50%;
+	background-color: rgba(255,255,255,.5);
+	float: right;
+	margin-top: 100px;
+	padding: 20px;
+}
+
+/* You might want to move it to owl-theme.css */
+.owl-theme .owl-controls{
+	margin-top: -30px;
+	text-align: center;
+	margin-bottom: 30px;	
+}
+
+.owl-theme .owl-controls .owl-page span {
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	filter: Alpha(Opacity=50);
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background: transparent;
+	border: solid 1px #fff;
+}
+/*Real photos*/
+#realphotos img {
+	width: 100%;
+	height: 100%;
+}
+
+/*MEDIA QUERIES*/
+/* collapse ui-grid-c to 2 per row below 40em (640px) */
+@media all and (max-width: 35em) {
+	.ui-grid-c .ui-block-a,
+	.ui-grid-c .ui-block-b,
+	.ui-grid-c .ui-block-c,
+	.ui-grid-c .ui-block-d{
+		width: 50%;
+		float: left;
+	}
+
+	
+}
+
+@media all and (min-width: 60em) {
+	h1 {color: red;}
+	.hide-on-wide {
+		display: none !important;
+	}
+
+	.hide-on-mobile {
+		display: block;
+	}
+
+	.ui-page {
+		margin: 0 auto;
+	}
+
+
+	/*Navigation menu on desktop only*/
+	#nav-desktop{
+		position: relative;
+		display: block;
+		float: left;
+		width: 100%;
+		z-index: 9999;
+	}
+
+	#nav-desktop a {
+		padding: 1em;
+	}
+
+	#nav-desktop .linkgroup {
+		float: left;
+		margin: 1em;
+	}
+
+	.floatright {
+		float: right !important;
+	}
+
+	/* Carousel items*/
+	#carousel-home .item {
+		height: 450px;
+	}
+
+	/*Center folds below on the desktop*/
+	.fold-b, .fold-c, .footer-container {
+		width: 60em;
+		margin: 0 auto;
+	}
+
+	/* Call to action button, eg. SHOP NOW */
+	.ui-btn.call-to-action {
+		width: 20em;
+		margin: 0 auto;
+	}
+
+}
