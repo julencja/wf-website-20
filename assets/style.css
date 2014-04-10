@@ -16,6 +16,15 @@ section{
 	width: 100%;
 }
 
+/*-Header-*/
+header .logo{
+	display: inline-block;
+	width: 7em;
+}
+
+header .logo img{
+	width: 100%;
+}
 /*--First fold carousel--*/
 #carousel-home .item{
 	width: 100%;
@@ -129,6 +138,10 @@ section{
 		margin: 0 auto;
 	}
 
+	/*-Header-*/
+	header .logo{
+		width: 10em;
+	}
 
 	/*Navigation menu on desktop only*/
 	#nav-desktop{
