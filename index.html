@@ -3,14 +3,14 @@
 <head>	
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<!-- custom jquery mobile styles -->
-	<link rel="stylesheet" href="assets/wf2.2.css" />
-  	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<title>Wellfitting | Custom Fit Bras | Full Bust</title>
 	<!--jQueryMobile-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.2/jquery.mobile.min.js"></script>
+	<!-- custom jquery mobile styles -->
+	<link rel="stylesheet" type="text/css" href="assets/wf23.css" />
+  	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 	<!--Owl Carousel-->
 	<!-- Important Owl stylesheet -->
 	<link rel="stylesheet" href="assets/owl.carousel.css"> 
@@ -124,10 +124,10 @@ $(document).ready(function() {
 	</script>
 	
 </head>
-<body>
-	<div data-role="page" id="indexPage" data-theme="a">
+<body data-theme="a">
+	<div data-role="page" id="indexPage">
 		<!--Panel for navmenu-->
-		<nav data-role="panel" data-display="push" id="left-panel">
+		<nav data-role="panel" data-display="push" id="left-panel" data-theme="c">
 			<ul data-role="listview">
 				<li><a href="#">Shop bras</a></li>
 				<li data-role="list-divider"><h2>Bra Fitting</h2></li>
@@ -201,7 +201,7 @@ $(document).ready(function() {
 
 		</div><!-- /ui-content-->
 
-		<footer data-role="footer">
+		<footer data-role="footer" data-theme="a">
 			<div class="ui-grid-solo ui-responsive">
     			<div class="ui-block-a">
     				<a href="http://facebook.com/wellfitting">Facebook</a>
