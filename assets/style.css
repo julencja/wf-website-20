@@ -134,12 +134,21 @@ header .logo img{
 #product-gallery figure .ui-btn{
 	padding: 0 !important;
 	border: none !important;
-	border-radius: 0;
+	display: flex;
+	
 }
 
 #product-gallery figure img {
 	width: 100%;
 	height: 100%;
+}
+
+#product-gallery a:hover>img{
+	-webkit-filter: contrast(125%);
+	-moz-filter: contrast(125%);
+	-ms-filter: contrast(125%);
+	-o-filter: contrast(125%);
+	filter: contrast(125%);
 }
 
 /*MEDIA QUERIES*/
@@ -161,8 +170,15 @@ header .logo img{
 	
 }
 /*tablets and small screens*/
-@media all and (min-width: 35em) {
-  h3 {color: green;}
+@media all and (max-width: 50em) {
+  	.ui-grid-b>.ui-block-a,
+	.ui-grid-b>.ui-block-b,
+	.ui-grid-b>.ui-block-c
+	{
+		width: 50% !important;
+		float: left;
+		clear: none;
+	}
   
 }
 
@@ -182,9 +198,13 @@ header .logo img{
 
 	/*-Header-*/
 	header .logo{
-		width: 10em;
+		width: 7em;
+		padding: .3em 0 0 0;
 	}
 
+	.ui-header .ui-title {
+		padding: 0 0 0 0!important;
+	}
 	/*Navigation menu on desktop only*/
 	#nav-desktop{
 		

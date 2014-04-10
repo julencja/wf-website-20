@@ -11,6 +11,7 @@
 	<!-- custom jquery mobile styles -->
 	<link rel="stylesheet" type="text/css" href="assets/wf23.css" />
   	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  	<link href='http://fonts.googleapis.com/css?family=Lato:300, 400,700|Playfair+Display:400,900,400italic,900italic' rel='stylesheet' type='text/css'>
 	<!--Owl Carousel-->
 	<!-- Important Owl stylesheet -->
 	<link rel="stylesheet" href="assets/owl.carousel.css"> 
@@ -32,7 +33,7 @@
 		<!--Panel for navmenu-->
 		<nav data-role="panel" data-display="push" id="left-panel" class="hide-on-desktop" data-theme="b">
 			<ul data-role="listview">
-				<li><a href="#">Shop bras</a></li>
+				<li><a href="/products.html">Shop bras</a></li>
 				<li data-role="list-divider"><h2>Bra Fitting</h2></li>
 				<li><a href="#">Sizing</a></li>
 				<li><a href="#">Fit check</a></li>
@@ -53,32 +54,29 @@
 	    </nav><!-- /panel -->
 			
 		<header data-role="header" data-position-fixed="true">
-			<h1>Wellfitting</h1>
 			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="hide-on-desktop">Menu</a>
+			<h1><a href="/" class="logo"><img src="assets/logo.png"></a></h1>
 			<a href="#right-panel" data-icon="shop" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Your bag</a>
 
 		</header> <!-- /header-->
 
-		<div class="ui-content">
+		<div class="ui-content" role="main">
 			<!--Navigation for screens 60em+-->
-			<nav class="hide-on-mobile" id="nav-desktop">
-				<div class="linkgroup">
-					<a href="#">Link1 group 1</a>
-					<a href="#">Link2 group 1</a>
-				</div>
-
-				<div class="linkgroup">
-					<a href="#">Link group 2</a>
-					<a href="#">Link group 2</a>
-				</div>
-
-				<div class="linkgroup floatright">
-					<a href="#">Link group 3</a>
-					<a href="#">Link group 3</a>
-				</div>
+			<nav class="ui-grid-solo ui-responsive hide-on-mobile" id="nav-desktop">
+    			<div class="ui-block-a">
+    				<div class="linkgroup">
+						<a href="/products.html" class="active">shop sexy bras</a>
+						<a href="#">learn your bra size</a>
+						<a href="#">get free fit check</a>
+					</div>
+					<div class="linkgroup floatright">
+						<a href="#">about us</a>
+						<a href="#">blog</a>
+					</div>
+    			</div>
 			</nav>
 			<!--/navmenu-->
-			<div id="firstfold" class="carousel">
+			<div id="firstfold" class="carousel" data-theme="b">
 				<div id="carousel-home" class="owl-carousel">
 				  	<div class="item item1">
 				  		<div class="tagline">
@@ -96,7 +94,7 @@
 			  		</div>
 				</div>
 				
-				<a href="#" class="ui-btn call-to-action">Shop now</a>
+				<a href="/products.html" class="ui-btn call-to-action">Shop now</a>
 			</div>
 			
 			<section class="fold-b">
@@ -126,42 +124,14 @@
 
 		</div><!-- /ui-content-->
 
-		<footer data-role="footer">
+
+		<footer data-role="footer" data-theme="b">
 			<div class="ui-grid-solo ui-responsive">
     			<div class="ui-block-a">
     				<a href="http://facebook.com/wellfitting">Facebook</a>
     			</div>
 			</div>
 			<div class="ui-grid-b ui-responsive">
-			    <div class="ui-block-a">
-			    	<div class="ui-bar">
-			    		<h3>Our Newsletter</h3>
-			    		<p>Sign up and be the first to know about new products and exclusive sdeals!</p>
-			    		<form>
-							<label for="textinput-hide" class="ui-hidden-accessible">Your email</label>
-							<input type="text" name="textinput-hide" id="textinput-hide" placeholder="Your email" value="">
-							<button class="ui-shadow ui-btn ui-corner-all">Join!</button>
-			    		</form>
-		    		</div>
-			    </div>
-			    <div class="ui-block-b">
-			    	<div class="ui-bar">
-			    		<h3>Support</h3>
-			    		<ul>
-			    			<li> <a href="">Shipping Policy</a></li>
-			    			<li> <a href="">Exchange & Returns</a></li>
-			    			<li> <a href="">Need help?</a></li>
-			    		</ul>
-			    	</div>
-=======
-		<footer data-role="footer">
-			<div class="footer-container">
-				<div class="ui-grid-solo ui-responsive">
-	    			<div class="ui-block-a">
-	    				<a href="http://facebook.com/wellfitting">Facebook</a>
-	    			</div>
->>>>>>> 79be2ef594720f7c0f63b5f6bbeefd79aa2f214e
-				</div>
 				<div class="ui-grid-b ui-responsive">
 				    <div class="ui-block-a">
 				    	<div class="ui-bar">
