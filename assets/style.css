@@ -54,7 +54,7 @@ section{
 
 }
 
-#indexPage .ui-content {
+.ui-content{
 	padding: 0 0 0 0;
 }
 
@@ -78,23 +78,6 @@ header .logo img{
 	width: 7em;
 }
 
-/*Navigation on desktop */
-#nav-desktop li {
-	display: inline-block;
-}
-#nav-desktop a, #nav-desktop a:visited {
-	color: #000;	
-	font-weight: 400;
-	font-variant: small-caps;
-}
-#nav-desktop a:hover, #nav-desktop a:active {
-	opacity: .6;
-}
-
-#nav-desktop .ui-btn .ui-icon-shop .ui-btn-icon-notext .ui-corner-all{
-	width: 28px;
-	padding: 0 0 0 0;
-}
 /*--First fold carousel--*/
 #carousel-home .item{
 	width: 100%;
@@ -225,8 +208,14 @@ header .logo img{
 	h2 {font-size: 300%;}
 
 	/*Navigation menu on desktop only*/
+
 	#nav-desktop{
-		
+		width: 100%;
+	position: fixed;
+	z-index: 9999;
+	background: #fff;
+	border-bottom: solid 1px red;
+	float: left;
 	}
 	#nav-desktop .logo {
 		float: left;
@@ -244,6 +233,20 @@ header .logo img{
 	#nav-desktop .linkgroup {
 		float: left;
 		margin: 1em;
+	}
+
+	#nav-desktop a, #nav-desktop a:visited {
+		color: #000;	
+		font-weight: 400;
+		font-variant: small-caps;
+	}
+	#nav-desktop a:hover, #nav-desktop a:active {
+		opacity: .6;
+	}
+
+	#nav-desktop .ui-btn .ui-icon-shop .ui-btn-icon-notext .ui-corner-all{
+		width: 28px;
+		padding: 0 0 0 0;
 	}
 
 	.floatright {
