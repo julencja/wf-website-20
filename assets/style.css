@@ -6,17 +6,7 @@ body {
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
 }
-#nav-desktop li {
-	display: inline-block;
-}
-#nav-desktop a, #nav-desktop a:visited {
-	color: #000;	
-	font-weight: 400;
-	font-variant: small-caps;
-}
-#nav-desktop a:hover, #nav-desktop a:active {
-	opacity: .6;
-}
+
 p {
 	font-weight: 400;
 	text-shadow: none;
@@ -37,9 +27,15 @@ h2 {
 	text-shadow: none;
 	font-variant: small-caps;
 }
-h3
 
-/*to be moved to a separate file when done*/		
+a.active{
+	text-decoration: none;
+}
+
+section{
+
+}
+
 #indexPage .ui-content {
 	padding: 0 0 0 0;
 }
@@ -48,22 +44,28 @@ h3
 		display: none;
 	}
 
-a.active{
-	text-decoration: none;
-}
 
-section{
-	width: 100%;
-}
 
 /*-Header-*/
 header .logo{
-	display: inline-block;
-	width: 7em;
+	display: inline-block;	
 }
 
 header .logo img{
-	width: 100%;
+	width: 7em;
+}
+
+/*Navigation on desktop */
+#nav-desktop li {
+	display: inline-block;
+}
+#nav-desktop a, #nav-desktop a:visited {
+	color: #000;	
+	font-weight: 400;
+	font-variant: small-caps;
+}
+#nav-desktop a:hover, #nav-desktop a:active {
+	opacity: .6;
 }
 /*--First fold carousel--*/
 #carousel-home .item{
@@ -95,15 +97,18 @@ header .logo img{
 }
 
 #carousel-home .tagline {
-	width: 50%;
+	width: 60%;
 	color: #fff;
 	float: right;
-	margin-top: 100px;
-	padding: 20px;
+	margin: 120px 50px 0 50px;
 	font-variant: normal;
 }
+#carousel-home .tagline h1 {
+	font-size: 300%;
+}
 #carousel-home .tagline h2 {
-
+	margin: 0 0 1em 0;
+	font-size: 150%;
 }
 /* You might want to move it to owl-theme.css */
 .owl-theme .owl-controls{
@@ -196,20 +201,19 @@ header .logo img{
 		margin: 0 auto;
 	}
 
-	/*-Header-*/
-	header .logo{
-		width: 7em;
-		padding: .3em 0 0 0;
-	}
-
-	.ui-header .ui-title {
-		padding: 0 0 0 0!important;
-	}
 	/*Navigation menu on desktop only*/
 	#nav-desktop{
 		
 	}
+	#nav-desktop .logo {
+		float: left;
+		width: 100px !important;
+	}
 
+	#nav-desktop .logo img {
+		width: 100%;
+		margin-top: -15px;
+	}
 	#nav-desktop a {
 		padding: 1em;
 	}
@@ -225,7 +229,7 @@ header .logo img{
 
 	/* Carousel items*/
 	#carousel-home .item {
-		height: 450px;
+		height: 500px;
 	}
 
 	/*Center folds below on the desktop*/
