@@ -211,11 +211,9 @@ header .logo img{
 
 	#nav-desktop{
 		width: 100%;
-	position: fixed;
-	z-index: 9999;
-	background: #fff;
-	border-bottom: solid 1px red;
-	float: left;
+		z-index: 9999;
+		background: #fff;
+		float: left;
 	}
 	#nav-desktop .logo {
 		float: left;
@@ -283,6 +281,10 @@ header .logo img{
 		font-variant: small-caps;
 		font-size: 150%;
 		font-weight: 300 !important;
+	}
+
+	.fold-b, .fold-c {
+
 	}
 
 }

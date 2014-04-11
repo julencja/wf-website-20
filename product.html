@@ -24,14 +24,17 @@
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<!--Custom JS-->
 	<script src="assets/js.js" type="text/javascript"></script>
+
+
+	
 </head>
 <body>
 	<!--Home Page-->
-	<div data-role="page" id="productsPage" class="">
+	<div data-role="page" id="indexPage" data-theme="a" class="">
 		<!--Panel for navmenu-->
 		<nav data-role="panel" data-display="push" id="left-panel" class="hide-on-desktop">
 			<ul data-role="listview">
-				<li><a href="#">Shop bras</a></li>
+				<li><a href="/products.html">Shop Bras</a></li>
 				<li data-role="list-divider"><h2>Bra Fitting</h2></li>
 				<li><a href="#">Sizing</a></li>
 				<li><a href="#">Fit check</a></li>
@@ -45,22 +48,21 @@
 	    </nav><!-- /panel -->
 	    <!--Panel for shopping bag-->
 	    <nav data-role="panel" data-position="right" data-display="push" id="right-panel">
-	    	 <ul data-role="listview" data-theme="a" data-icon="false">
+	    	 <ul data-role="listview" data-icon="false">
             	<li data-icon="arrow-l"><a href="#" data-rel="close">Back to shopping</a></li>
             	<li data-icon="arrow-r"><a href="">Checkout</a></li>
         	</ul>
 	    </nav><!-- /panel -->
 			
 		<header data-role="header" data-position-fixed="true" class="hide-on-desktop">
-			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="hide-on-desktop">Menu</a>
+			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
 			<h1><a href="/" class="logo"><img src="assets/logo.png"></a></h1>
 			<a href="#right-panel" data-icon="shop" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Your bag</a>
-
 		</header> <!-- /header-->
 
-		<div class="ui-content">
+		<div class="ui-content" role="main">
 			<!--Navigation for screens 60em+-->
-			<nav class="ui-grid-solo ui-responsive hide-on-mobile" id="nav-desktop">
+			<nav class="ui-grid-solo hide-on-mobile" id="nav-desktop">
     			<div class="ui-block-a">
     				<div class="linkgroup logo">
     					<a href="" class=""><img src="assets/logo.png" class=""></a>
@@ -80,74 +82,19 @@
     			</div>
 			</nav>
 			<!--/navmenu-->
-			<section class="fold-b">
-				<h2>Shop New Arrivals</h2>
-				<div class="ui-grid-b" id="product-gallery">
-					<figure class="ui-block-a">
-						<div class="ui-bar">
-							<a href="/product.html">
-								<img src="assets/product-thumb.jpg">
-							</a>
-							<h2><a href="">Bra Name</a></h2>
-							<h3>$69</h3>
-						</div>
-					</figure>
-					<figure class="ui-block-b">
-						<div class="ui-bar">
-							<a href="">
-								<img src="assets/product-thumb.jpg">
-							</a>
-							<h2><a href="">Bra Name</a></h2>
-							<h3>$69</h3>
-						</div>
-					</figure>
-					<figure class="ui-block-c">
-						<div class="ui-bar">
-							<a href="">
-								<img src="assets/product-thumb.jpg">
-							</a>
-							<h2><a href="">Bra Name</a></h2>
-							<h3>$69</h3>
-						</div>
-					</figure>
-					<figure class="ui-block-a">
-						<div class="ui-bar">
-							<a href="">
-								<img src="assets/product-thumb.jpg">
-							</a>
-							<h2><a href="">Bra Name</a></h2>
-							<h3>$69</h3>
-						</div>
-					</figure>
-					<figure class="ui-block-b">
-						<div class="ui-bar">
-							<a href="">
-								<img src="assets/product-thumb.jpg">
-							</a>
-							<h2><a href="">Bra Name</a></h2>
-							<h3>$69</h3>
-						</div>
-					</figure>
-					<figure class="ui-block-c">
-						<div class="ui-bar">
-							<a href="">
-								<img src="assets/product-thumb.jpg">
-							</a>
-							<h2><a href="">Bra Name</a></h2>
-							<h3>$69</h3>
-						</div>
-					</figure>
-				</div>
-			</section>
+			
+			
+
 		</div><!-- /ui-content-->
 
+
 		<footer data-role="footer">
-			<div class="footer-container">
-				<div class="ui-grid-solo ui-responsive">
-	    			<div class="ui-block-a">
-	    				<a href="http://facebook.com/wellfitting">Facebook</a>
-	    			</div>
-				</div>
+			<div class="ui-grid-solo ui-responsive">
+    			<div class="ui-block-a">
+    				<a href="http://facebook.com/wellfitting">Facebook</a>
+    			</div>
+			</div>
+			<div class="ui-grid-b ui-responsive">
 				<div class="ui-grid-b ui-responsive">
 				    <div class="ui-block-a">
 				    	<div class="ui-bar">
