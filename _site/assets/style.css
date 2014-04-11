@@ -1,14 +1,19 @@
 /**CUSTOM CSS beyond jQueryMobile**/
 /* TYPOGRAPHY */
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,900,400italic|Raleway:600,400,300);
+
 body {
-	font-family: 'Maven Pro', Helvetica, sans-serif;
+	font-family: 'Raleway', Helvetica, sans-serif;
+	line-height: 1.5;
+	font-size: 11pt;
+	font-weight: 300;
 }
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
 }
 
 p {
-	font-weight: 400;
+	font-weight: 300;
 	text-shadow: none;
 }
 h1 {
@@ -22,11 +27,12 @@ h1 {
 h2 {
 	text-align: center;
 	line-height: 2;
-	font-weight: 700;
+	font-weight: 400;
 	font-size: 150%;
 	text-shadow: none;
 	font-variant: small-caps;
 }
+
 
 a.active{
 	text-decoration: none;
@@ -34,6 +40,12 @@ a.active{
 
 section{
 
+}
+
+.call-to-action {
+	font-variant: small-caps;
+	font-size: 150%;
+	font-weight: 300 !important;
 }
 
 #indexPage .ui-content {
@@ -66,6 +78,11 @@ header .logo img{
 }
 #nav-desktop a:hover, #nav-desktop a:active {
 	opacity: .6;
+}
+
+#nav-desktop .ui-btn .ui-icon-shop .ui-btn-icon-notext .ui-corner-all{
+	width: 28px;
+	padding: 0 0 0 0;
 }
 /*--First fold carousel--*/
 #carousel-home .item{
@@ -184,7 +201,13 @@ header .logo img{
 		float: left;
 		clear: none;
 	}
-  
+}
+
+@media all and (min-width: 50em){
+
+#carousel-home .item{
+		height: 450px;
+  	}
 }
 
 /*laptop and wide screens*/
