@@ -19,21 +19,21 @@ p {
 }
 h1 {
 	font-family: 'Playfair Display', Georgia, serif;
-	font-size: 300%;
+	font-size: 200%;
 	font-weight: 900;
 	text-align: center;
 	line-height: 1.2;
 	text-shadow: none;
 }
 h2 {
-	font-family: 'Playfair Display', Georgia, serif;
 	text-align: center;
 	line-height: 1.5;
 	font-weight: 400;
-	font-size: 200%;
+	font-size: 100%;
 	text-shadow: none;
 	font-variant: small-caps;
 	margin: 1em;
+	border-bottom: 2px solid #575757;
 }
 h3 {
 	
@@ -261,7 +261,7 @@ header .logo img{
 	
 	#carousel-home .tagline h2 {
 		margin: 0 0 1em 0;
-		font-size: 150%;
+		border: none;
 	}
 	#carousel-home .item {
 		height: 500px;
