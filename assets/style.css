@@ -12,10 +12,16 @@ body {
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
 }
+
 p {
 	font-weight: 300;
 	text-shadow: none;
 	padding: 1em 0;
+}
+
+.fold-b p {
+	text-align: center;
+	padding: 2em 0;
 }
 h1 {
 	font-family: 'Playfair Display', Georgia, serif;
@@ -23,19 +29,22 @@ h1 {
 	text-align: center;
 	line-height: 1.2;
 	text-shadow: none;
+	font-size: 300%;
+	padding: .5em .5em 0 .5em;
 }
 h2 {
 	text-align: center;
 	line-height: 1.5;
 	font-weight: 400;
 	text-shadow: none;
-	font-variant: small-caps;
-	border-bottom: 2px solid #575757;
+	text-transform: uppercase;
+	font-size: 200%;
+	padding: .5em .5em 0 .5em;
 }
 h3 {
 	font-family: "Playfair Display", Georgia, serif;
 	font-weight: 400;
-	margin: 1em;
+	padding: 1em;
 }
 
 .ui-btn {
@@ -143,6 +152,23 @@ header .logo img{
 	filter: contrast(125%);
 }
 
+/*Product page*/
+#product h2 {
+	font-size: 120%;
+}
+#product .price {
+	background-color: #30c4c9;
+	color: #fff;
+	padding: 4px;
+}
+#product #carousel-product {
+	margin: 10px 0;
+}
+#product #carousel-product img{
+	width: 100%;
+
+}
+
 /*MEDIA QUERIES*/
 /*smartphones*/
 @media all and (max-width: 40em) {
@@ -195,7 +221,7 @@ header .logo img{
 	}
 
 	h1 {font-size: 400%;}
-	h2 {font-size: 300%;}
+	h2 {font-size: 200%;}
 
 	/*Navigation menu on desktop only*/
 
@@ -253,6 +279,7 @@ header .logo img{
 	#carousel-home .tagline h2 {
 		margin: 0 0 1em 0;
 		border: none;
+		font-size: 150%;
 	}
 	#carousel-home .item {
 		height: 500px;

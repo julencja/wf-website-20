@@ -1,6 +1,6 @@
 $(document).ready(function() {
 //Launch carouser on mainfold 
-	$("#carousel-home").owlCarousel({
+	$("#carousel-home, #carousel-product").owlCarousel({
 		items: 1,
     	itemsScaleUp: true,
     	itemsDesktop : [1199,1],
@@ -12,7 +12,7 @@ $(document).ready(function() {
 	    paginationSpeed : 800,
 	    rewindSpeed : 1000,
 	    //Autoplay
-	    autoPlay : false,
+	    autoPlay : 3000,
 	    stopOnHover : true,
 	  	});
 });
