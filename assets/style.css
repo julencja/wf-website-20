@@ -7,6 +7,7 @@ body {
 	line-height: 1.5;
 	font-size: 11pt;
 	font-weight: 300;
+	text-shadow: none !important;
 }
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
@@ -21,23 +22,30 @@ h1 {
 	font-size: 300%;
 	font-weight: 900;
 	text-align: center;
-	line-height: 1.5;
+	line-height: 1.2;
 	text-shadow: none;
 }
 h2 {
+	font-family: 'Playfair Display', Georgia, serif;
 	text-align: center;
-	line-height: 2;
+	line-height: 1.5;
 	font-weight: 400;
-	font-size: 150%;
+	font-size: 200%;
 	text-shadow: none;
 	font-variant: small-caps;
+	margin: 1em;
 }
 h3 {
-	font-size: 150%;
+	
+	font-size: 120%;
 	font-family: "Playfair Display", Georgia, serif;
 	font-weight: 400;
+	margin: 1em;
 }
 
+.ui-btn {
+	text-shadow: none !important;
+}
 a.active{
 	text-decoration: none;
 }
@@ -59,6 +67,11 @@ section{
 /*-Header-*/
 header .logo{
 	display: inline-block;	
+	margin-top: -.5em;
+}
+
+.ui-header .ui-title, .ui-footer .ui-title {
+		padding: .7em 0 0 0!important;
 }
 
 header .logo img{
@@ -76,6 +89,11 @@ header .logo img{
 }
 #nav-desktop a:hover, #nav-desktop a:active {
 	opacity: .6;
+}
+
+#nav-desktop .ui-btn .ui-icon-shop .ui-btn-icon-notext .ui-corner-all{
+	width: 28px;
+	padding: 0 0 0 0;
 }
 /*--First fold carousel--*/
 #carousel-home .item{
@@ -106,16 +124,7 @@ header .logo img{
 	background-position: top right;
 }
 
-#carousel-home .tagline {
-	width: 60%;
-	color: #fff;
-	float: right;
-	margin: 120px 50px 0 50px;
-	font-variant: normal;
-}
-#carousel-home .tagline h2 {
-	margin: 0 0 1em 0;
-}
+
 /* You might want to move it to owl-theme.css */
 .owl-theme .owl-controls{
 	margin-top: -30px;
@@ -189,7 +198,13 @@ header .logo img{
 		float: left;
 		clear: none;
 	}
-  
+}
+
+@media all and (min-width: 50em){
+
+#carousel-home .item{
+		height: 450px;
+  	}
 }
 
 /*laptop and wide screens*/
@@ -205,6 +220,9 @@ header .logo img{
 	.ui-page {
 		margin: 0 auto;
 	}
+
+	h1 {font-size: 400%;}
+	h2 {font-size: 300%;}
 
 	/*Navigation menu on desktop only*/
 	#nav-desktop{
@@ -233,6 +251,18 @@ header .logo img{
 	}
 
 	/* Carousel items*/
+	#carousel-home .tagline {
+	width: 60%;
+	color: #fff;
+	float: right;
+	margin: 150px 50px 0 50px;
+	font-variant: normal;
+}
+	
+	#carousel-home .tagline h2 {
+		margin: 0 0 1em 0;
+		font-size: 150%;
+	}
 	#carousel-home .item {
 		height: 500px;
 	}
