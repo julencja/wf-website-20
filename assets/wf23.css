@@ -296,7 +296,7 @@ html head   body .ui-btn.ui-btn-a:visited {
 	background-color: #30C4C9 /*{a-bup-background-color}*/;
 	border-color: #30d3d9 /*{a-bup-border}*/;
 	color: #fff /*{a-bup-color}*/;
-	text-shadow: 0 /*{a-bup-shadow-x}*/ 0 /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ nnoneine /*{a-bup-shadow-color}*/;
+	text-shadow: 0 /*{a-bup-shadow-x}*/ 0 /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ none /*{a-bup-shadow-color}*/;
 }
 /* Button hover */
 .ui-page-theme-a .ui-btn:hover,
@@ -318,7 +318,7 @@ html head   body .ui-btn.ui-btn-a:active {
 	background-color: #fff /*{a-bdown-background-color}*/;
 	border-color: #fafafa /*{a-bdown-border}*/;
 	color: #575757 /*{a-bdown-color}*/;
-	text-shadow: 0 /*{a-bdown-shadow-x}*/ 0 /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ nonnonee /*{a-bdown-shadow-color}*/;
+	text-shadow: 0 /*{a-bdown-shadow-x}*/ 0 /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ none /*{a-bdown-shadow-color}*/;
 }
 /* Active button */
 .ui-page-theme-a .ui-btn.ui-btn-active,

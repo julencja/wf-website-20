@@ -11,6 +11,7 @@ body {
 }
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
+	text-shadow: 0 0 0 none;
 }
 
 p {
@@ -19,6 +20,7 @@ p {
 	padding: 1em 0;
 }
 
+li a {text-shadow: 0 0 0 none!important;}
 .fold-b p {
 	text-align: center;
 	padding: 2em 0;
@@ -160,6 +162,20 @@ header .logo img{
 	background-color: #30c4c9;
 	color: #fff;
 	padding: 4px;
+}
+
+#product .shipping-info,
+#product .sizing-info {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 75%;
+}
+
+#product .shipping-info small {
+	border-bottom: solid 1px #bbb;
+}
+#product li {
+	list-style-position: inside;
 }
 #product #carousel-product {
 	margin: 10px 0;
