@@ -18,7 +18,7 @@ p {
 }
 h1 {
 	font-family: 'Playfair Display', Georgia, serif;
-	font-size: 200%;
+	font-size: 300%;
 	font-weight: 900;
 	text-align: center;
 	line-height: 1.5;
@@ -32,7 +32,11 @@ h2 {
 	text-shadow: none;
 	font-variant: small-caps;
 }
-
+h3 {
+	font-size: 150%;
+	font-family: "Playfair Display", Georgia, serif;
+	font-weight: 400;
+}
 
 a.active{
 	text-decoration: none;
@@ -40,12 +44,6 @@ a.active{
 
 section{
 
-}
-
-.call-to-action {
-	font-variant: small-caps;
-	font-size: 150%;
-	font-weight: 300 !important;
 }
 
 #indexPage .ui-content {
@@ -104,7 +102,7 @@ header .logo img{
 }
 
 #carousel-home .item4 {
-	background-image: url('arizona.jpg');
+	background-image: url('arizona2.jpg');
 	background-position: top right;
 }
 
@@ -115,12 +113,8 @@ header .logo img{
 	margin: 120px 50px 0 50px;
 	font-variant: normal;
 }
-#carousel-home .tagline h1 {
-	font-size: 300%;
-}
 #carousel-home .tagline h2 {
 	margin: 0 0 1em 0;
-	font-size: 150%;
 }
 /* You might want to move it to owl-theme.css */
 .owl-theme .owl-controls{
@@ -134,12 +128,11 @@ header .logo img{
 	width: 10px;
 	height: 10px;
 	margin: 5px 7px;
-	filter: Alpha(Opacity=50);
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
-	background: transparent;
-	border: solid 1px #fff;
+	background: #fff;
+	opacity: .6;
 }
 /*Real photos*/
 #realphotos img {
@@ -252,8 +245,11 @@ header .logo img{
 
 	/* Call to action button, eg. SHOP NOW */
 	.ui-btn.call-to-action {
-		width: 20em;
+		width: 10em;
 		margin: 0 auto;
+		font-variant: small-caps;
+		font-size: 150%;
+		font-weight: 300 !important;
 	}
 
 }
