@@ -161,6 +161,10 @@ header .logo img{
 	color: #fff;
 	padding: 4px;
 }
+
+#product li {
+	list-style-position: inside;
+}
 #product #carousel-product {
 	margin: 10px 0;
 }
