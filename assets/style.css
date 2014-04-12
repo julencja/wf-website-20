@@ -246,7 +246,40 @@ header .logo img{
 	width: 100%;
 
 }
-
+/*FOOTER*/
+.socialIcons {
+	text-align: center;
+}
+.socialIcons a {
+	font-family: 'Playfair Display', Georgia, serif;
+	font-size: 150%;
+	font-weight: 400 !important;
+	text-shadow: none !important;
+}
+.socialIcons span {
+	display: inline-block;
+	width: 61px;
+	height: 61px;
+	background-image: url('sprite.png');
+	background-repeat: no-repeat;
+	vertical-align: middle;
+	margin: 20px;
+}
+.socialIcons .fb {
+	background-position: 0 0;
+}
+.socialIcons .twitter {
+	background-position: -62px 0;
+}
+.socialIcons .pinterest {
+	background-position: -124px 0;
+}
+.socialIcons .instagram {
+	background-position: -186px 0;
+}
+.socialIcons .gplus {
+	background-position: -248px 0;
+}
 /*MEDIA QUERIES*/
 /*smartphones*/
 @media all and (max-width: 40em) {
