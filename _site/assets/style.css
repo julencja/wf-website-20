@@ -38,7 +38,8 @@ h2 {
 	text-shadow: none;
 	text-transform: uppercase;
 	font-size: 200%;
-	padding: .5em .5em 0 .5em;
+	padding: .5em 0 0 0;
+	margin: 0 auto 1em;
 }
 h3 {
 	text-align: center;
@@ -175,7 +176,7 @@ header .logo img{
 
 .fold-b .graphic-add-on{
 	width: 100%;
-	margin: 20px 0 0 0;
+	margin: 40px 0 0 0;
 }
 
 .fold-b h4 {
@@ -185,22 +186,14 @@ header .logo img{
 	display: block;
 }
 
-.fold-b .face {
-	width: 60px;
-	border-radius: 50%;
-	background: rgba(87, 87, 87, .1);
-	padding: 1px;
+.fold-b .highlight {
+	font-size: 130% !important;
+	margin-top: -3em !important;
 }
-/*.fold-b h4:after {
-	content: "";
-	background: #575757;
-	opacity: .5;
-	position: relative;
-	height: 1px;
-	width: 50%;
-	display: block;
-	margin: 0 auto 0.5em;
-}*/
+
+.fold-b .call-to-action {
+	margin: 20px auto !important;
+}
 /* Product gallery*/
 #product-gallery figure .ui-btn{
 	padding: 0 !important;
