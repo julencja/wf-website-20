@@ -17,14 +17,11 @@ a, a:hover, a:active, a:visited {
 p {
 	font-weight: 300;
 	text-shadow: none;
-	padding: 1em 0;
+	padding: 1em 0 0 0;
 }
 
 li a {text-shadow: 0 0 0 none!important;}
-.fold-b p {
-	text-align: center;
-	padding: 2em 0;
-}
+
 h1 {
 	font-family: 'Playfair Display', Georgia, serif;
 	font-weight: 900;
@@ -36,7 +33,7 @@ h1 {
 }
 h2 {
 	text-align: center;
-	line-height: 1.5;
+	line-height: 1.2;
 	font-weight: 400;
 	text-shadow: none;
 	text-transform: uppercase;
@@ -44,10 +41,30 @@ h2 {
 	padding: .5em .5em 0 .5em;
 }
 h3 {
-	font-family: "Playfair Display", Georgia, serif;
+	text-align: center;
+	line-height: 1.2;
 	font-weight: 400;
-	padding: 1em;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-size: 150%;
+	padding: .5em .5em 0 .5em;	
 }
+
+h3 {
+	text-align: center;
+	line-height: 1.2;
+	font-weight: 400;
+	text-shadow: none;
+	text-transform: uppercase;
+	font-size: 110%;
+	padding: .5em .5em 0 .5em;	
+}
+
+h4 {
+	padding: 1em 0 0 0 !important;
+} 
+
+small {font-size: 90%;}
 
 .ui-btn {
 	text-shadow: none !important;
@@ -110,6 +127,9 @@ header .logo img{
 
 
 /* You might want to move it to owl-theme.css */
+.owl-carousel {
+	position: static;
+}
 .owl-theme .owl-controls{
 	margin-top: -30px;
 	text-align: center;
@@ -127,12 +147,54 @@ header .logo img{
 	background: #fff;
 	opacity: .6;
 }
-/*Real photos*/
-#realphotos img {
+
+/*Fold b*/
+.fold-b p {
+	text-align: center;
+
+}
+.fold-b h3 {
+	font-weight: 400;
+	padding: 4em 0 0;
+	text-align: center;
+	text-transform: uppercase;
 	width: 100%;
-	height: 100%;
+	margin: 0 auto;
 }
 
+.fold-b h3:before {
+	content: "";
+	background: #575757;
+	opacity: .5;
+	position: relative;
+	height: 1px;
+	width: 50%;
+	display: block;
+	margin: 0 auto 0.5em;
+}
+
+.fold-b .graphic-add-on{
+	width: 100%;
+	margin: 60px 0;
+}
+
+.fold-b h4 {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+}
+
+/*.fold-b h4:after {
+	content: "";
+	background: #575757;
+	opacity: .5;
+	position: relative;
+	height: 1px;
+	width: 50%;
+	display: block;
+	margin: 0 auto 0.5em;
+}*/
 /* Product gallery*/
 #product-gallery figure .ui-btn{
 	padding: 0 !important;
@@ -192,9 +254,9 @@ header .logo img{
 	.ui-grid-c>.ui-block-b,
 	.ui-grid-c>.ui-block-c,
 	.ui-grid-c>.ui-block-d,
-	.ui-grid-b>.ui-block-a,
-	.ui-grid-b>.ui-block-b,
-	.ui-grid-b>.ui-block-c
+	#products-page .ui-grid-b>.ui-block-a,
+	#products-page .ui-grid-b>.ui-block-b,
+	#products-page .ui-grid-b>.ui-block-c
 	{
 		width: 50% !important;
 		float: left;
@@ -205,9 +267,9 @@ header .logo img{
 }
 /*tablets and small screens*/
 @media all and (max-width: 50em) {
-  	.ui-grid-b>.ui-block-a,
-	.ui-grid-b>.ui-block-b,
-	.ui-grid-b>.ui-block-c
+  	#products-page .ui-grid-b>.ui-block-a,
+	#products-page .ui-grid-b>.ui-block-b,
+	#products-page .ui-grid-b>.ui-block-c
 	{
 		width: 50% !important;
 		float: left;
@@ -266,9 +328,10 @@ header .logo img{
 	}
 
 	#nav-desktop a, #nav-desktop a:visited {
-		color: #000;	
-		font-weight: 400;
-		font-variant: small-caps;
+		color: #575757;	
+		font-weight: 800;
+		text-transform: uppercase;
+		font-size: 75%;
 	}
 	#nav-desktop a:hover, #nav-desktop a:active {
 		opacity: .6;
@@ -309,10 +372,10 @@ header .logo img{
 
 	/* Call to action button, eg. SHOP NOW */
 	.ui-btn.call-to-action {
-		width: 10em;
-		margin: 1em auto;
-		font-variant: small-caps;
-		font-size: 150%;
+		width: 14em;
+		margin: .3em auto;
+		text-transform: uppercase;
+		font-size: 100%;
 		font-weight: 300 !important;
 	}
 
