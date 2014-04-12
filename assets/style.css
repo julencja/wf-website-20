@@ -184,7 +184,18 @@ header .logo img{
 	width: 100%;
 
 }
-
+/*FOOTER*/
+.socialIcons span{
+	display: block;
+	width: 61px;
+	height: 61px;
+	background-image: url('sprite.png');
+	background-repeat: no-repeat;
+	background-color: red;
+}
+.socialIcons .fb {
+	background-position: top left;
+}
 /*MEDIA QUERIES*/
 /*smartphones*/
 @media all and (max-width: 40em) {
