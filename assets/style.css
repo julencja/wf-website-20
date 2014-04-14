@@ -71,7 +71,9 @@ a.active{
 		display: none;
 	}
 
-
+.centered {
+	text-align: center;
+}
 
 /*-Header-*/
 header .logo{
@@ -185,6 +187,11 @@ header .logo img{
 
 .fold-a .call-to-action {
 	margin: 20px auto !important;
+}
+
+.face {
+	width: 70px;
+	border-radius: 50%;
 }
 
 
