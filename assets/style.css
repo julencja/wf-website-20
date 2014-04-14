@@ -7,7 +7,7 @@ body {
 	line-height: 1.5;
 	font-size: 11pt;
 	font-weight: 300;
-	text-shadow: none !important;
+	text-shadow: 0 0 0 rgba(0,0,0,0)!important;
 }
 a, a:hover, a:active, a:visited {
 	text-decoration: none;
@@ -38,7 +38,7 @@ h2 {
 	text-shadow: none;
 	text-transform: uppercase;
 	font-size: 200%;
-	padding: .5em 0 0 0;
+	padding: 0 0 0 0;
 	margin: 0 auto 1em;
 }
 h3 {
@@ -48,7 +48,7 @@ h3 {
 	text-shadow: none;
 	text-transform: uppercase;
 	font-size: 150%;
-	padding: .5em .5em 0 .5em	
+	margin: 0 auto .5em	;
 }
 h4 {
 	padding: 1em 0 0 0 !important;
@@ -141,12 +141,13 @@ header .logo img{
 	opacity: .6;
 }
 
-/*Fold b*/
+/*Fold a*/
+.fold-a p,
 .fold-b p {
 	text-align: center;
 
 }
-.fold-b h3 {
+.fold-a h3 {
 	font-weight: 400;
 	padding: 4em 0 0;
 	text-align: center;
@@ -155,7 +156,7 @@ header .logo img{
 	margin: 0 auto;
 }
 
-.fold-b h3:before {
+.fold-a h3:before {
 	content: "";
 	background: #575757;
 	opacity: .5;
@@ -166,30 +167,41 @@ header .logo img{
 	margin: 0 auto 0.5em;
 }
 
-.fold-b .graphic-add-on{
+.fold-a .graphic-add-on{
 	width: 100%;
 	margin: 40px 0 0 0;
 }
 
-.fold-b h4 {
+.fold-a h4 {
 	text-align: center;
 	width: 100%;
 	margin: 0 auto;
 	display: block;
 }
 
-.fold-b .highlight {
+.highlight {
 	font-size: 130% !important;
-	margin-top: -3em !important;
 }
 
-.fold-b .call-to-action {
+.fold-a .call-to-action {
 	margin: 20px auto !important;
 }
 
+
+/*Fold b*/
+
+#real-photos {
+	margin: 2em auto 0;
+}
 #real-photos figure img {
 	width: 100%;
 }
+
+#real-photos figcaption{
+	text-align: center;
+	text-shadow: 0 0 0 rgba(0,0,0,0)!important;
+}
+
 /* Product gallery*/
 #product-gallery figure .ui-btn{
 	padding: 0 !important;
@@ -244,6 +256,9 @@ header .logo img{
 /*FOOTER*/
 .socialIcons {
 	text-align: center;
+	margin-bottom: 2em;
+	padding: 0 0 1em 0;
+	border-bottom: solid 1px #797979;
 }
 .socialIcons a {
 	font-family: 'Playfair Display', Georgia, serif;
@@ -341,7 +356,16 @@ footer button {
 	h2 {font-size: 200%;}
 
 	/*Navigation menu on desktop only*/
-
+	#topmost-bar {
+		text-align: center;
+		font-size:75%;
+		padding: 3px 0 ;
+		background: #30c4c9;
+		color: #fff;
+		width: 100%;
+		text-transform: uppercase;
+		text-shadow: 0 0 0 rgba(0,0,0,0)!important;
+	}
 	#nav-desktop{
 		width: 100%;
 		z-index: 9999;
@@ -354,16 +378,19 @@ footer button {
 	}
 
 	#nav-desktop .logo img {
-		width: 100%;
-		margin-top: -15px;
+		position: absolute;
+		width: 100px;
+		margin-top: -13px;
 	}
 	#nav-desktop a {
 		padding: 1em;
+		text-shadow: 0 0 0 rgba(0,0,0,0)!important;
 	}
 
 	#nav-desktop .linkgroup {
 		float: left;
-		margin: 1em;
+		margin: 1.2em 1em .8em;
+}
 	}
 
 	#nav-desktop a, #nav-desktop a:visited {
@@ -416,10 +443,12 @@ footer button {
 		text-transform: uppercase;
 		font-size: 100%;
 		font-weight: 300 !important;
+		border-radius: 3px;
 	}
 
-	.fold-b, .fold-c {
-
+	.fold-a, .fold-b, .fold-c {
+	margin: 2em auto;
+	padding: 3em 0;
 	}
 
 }
