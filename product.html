@@ -29,6 +29,14 @@
 	
 </head>
 <body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=593381654006218";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<!--Home Page-->
 	<div data-role="page" id="productPage" data-theme="a" class="">
 		<!--Panel for navmenu-->
@@ -85,6 +93,11 @@
 			<section class="fold-a" id="product">
 				
 				<div class="ui-grid-a ui-responsive">
+					<div id="thumbs" class="hide-on-mobile">
+						<img src="assets/Packshots/nude1.png">
+						<img src="assets/Packshots/nude2.png">
+						<img src="assets/Packshots/nude3.png">
+					</div>
 					<div id="carousel-product" class="owl-carousel ui-block-a">
 						<div class="item">
 							<img src="assets/Packshots/nude1.png">
@@ -98,13 +111,10 @@
 					</div>
 					<div class="ui-block-b" id="product-description">
 						<h1>Nude T-Shirt Bra</h1>
-						<h2>Our bestselling must-have <span class="price">$49</span></h2>
+						<h2>Bestselling must-have <br><span class="price">$49</span></h2>
 						<div class="ui-bar">
-							<div class="shipping-info">
-								<small>Free Global Shipping & Exchange Until 100% Happy</small>
-							</div>
 							<div class="sizing-info">
-								<small><a href="">How to pick the best bra size?</a></small>
+								<small><a href="">How to pick the bra size?</a></small>
 							</div>
 							<form id="add-to-cart" class="ui-bar">
 								<label for="select-choice-1" class="select ui-hidden-accessible">Select Size</label>
@@ -114,17 +124,26 @@
 								    <option value="32H">32H</option>
 								    <option value="32I">32I</option>
 								</select>
-								<button class="ui-btn ui-btn-icon-left ui-icon-shop">Add to bag</button>
+								<button class="ui-btn ui-btn-icon-left ui-icon-shop" data-theme="b">Add to bag</button>
 							</form>		
-							<p>Get an instant hourglass silhouette with this timeless classic bra, wear it under your favorite t-shirt or v-neck. <a href="">Learn more</a></p>
-							<p>We got a lot of requests for a basic nude bra, so here's a style perfect for everyday wear.</p>
-							<ul>
-								<li>Lightly lined for comfort and better uplift</li>
-								<li>Extra strong fabric on sides to guarantee better support</li>
-								<li>Subtle lace trimmings on cups</li>
-								<li>Perfect t-shirt bra to wear under white tops (does not show through a thin top)</li>
-								<li>The model wears size 34G.</li>
-							</ul>	
+							<p>Get an instant hourglass silhouette with this timeless classic bra. Wear it under your favorite t-shirt or v-neck.</p>
+							<p>This bra is lightly lined with extra strong fabric on the sides to provide better band support.</p>
+							<p>The model wears size 34G.</p>
+							<div class="addon-info">
+								<h3>Free Global Shipping</h3>
+								<h3>Free Returns & Unlimited Exchange</h3>
+								<h3>Ships within 2 weeks</h3>
+							</div>
+							<div class="social-buttons">
+								<div class="button">
+									<div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+								</div>
+								<div class="button">
+									<a href="//www.pinterest.com/pin/create/button/?url=http%3A%2F%2Fwww.flickr.com%2Fphotos%2Fkentbrew%2F6851755809%2F&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=Next%20stop%3A%20Pinterest" data-pin-do="buttonPin" data-pin-shape="round" data-pin-height="32"><img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_round_red_32.png" /></a>
+									<!-- Please call pinit.js only once per page -->
+									<script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>	
