@@ -12,7 +12,7 @@ $(document).ready(function() {
 	    paginationSpeed : 800,
 	    rewindSpeed : 1000,
 	    //Autoplay
-	    autoPlay : 3000,
+	    autoPlay : false,
 	    stopOnHover : true,
 	  	});
 });
