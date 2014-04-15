@@ -265,13 +265,34 @@ header .logo img{
 #product-description h2,
 #product-description p{
 	text-align: left;
+	padding: 0 0 20px 0;
+	margin: 0 0 0 0;
 }
 #product .price {
-	background-color: #30c4c9;
-	color: #fff;
-	padding: 4px;
+	font-size: 85%;
+	opacity: .7;
 }
 
+#product-description h1 {
+	font-size: 250%;
+}
+
+#product-description h2 {
+	font-size: 150%;
+}
+#product-description h3 {
+	padding: 1em 0 0;
+}
+
+#product-description h3:before {
+	width: 30%;
+	display: block;
+	margin: 0 auto 1em;
+}
+
+#product-description p {
+	font-size: 85%;
+}
 #product .shipping-info,
 #product .sizing-info {
 	text-align: center;
@@ -290,7 +311,13 @@ header .logo img{
 	width: 100%;
 }
 
+#product .social-buttons{
+	text-align: center;
+}
 
+.social-buttons .button {
+	margin: 0 20px 0 0;
+}
 /*FOOTER*/
 .socialIcons {
 	text-align: center;
@@ -526,13 +553,32 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
 		padding: 20px 0 0 0;
 	}
 
+	#product #thumbs {
+		width: 80px;
+		position: absolute;
+		margin: 20px 0 0 60px;
+	}
+
+	#product #thumbs img {
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+
+	#product #carousel-product {
+		width: 55%;
+	}
+
+	#product #carousel-product .item{
+		padding: 0 0 0 100px;
+	}
 	#product-description {
 		text-align: left;
 		background: #fff;
 		padding: 50px;
-		margin: 20px 0 0 0;
-		width: 45%;
+		margin: 20px 60px 0 0;
+		width: 35%;
 		border-radius: 5px;
+		float: right;
 	}
 
 }
