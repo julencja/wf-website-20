@@ -426,7 +426,20 @@ footer button {
 	float: right;
 	margin: 150px 50px 0 50px;
 	font-variant: normal;
-}
+	}
+
+	#carousel-home .tagline-r{
+		text-align: center;
+		margin: 190px 0 0 0;
+		width: 40%;
+	}
+
+	#carousel-home .tagline-c{
+		text-align: center;
+		float: left;
+		margin: 190px auto;
+		width: 100%;
+	}
 	
 	#carousel-home .tagline h2 {
 		margin: 0 0 1em 0;
@@ -436,6 +449,7 @@ footer button {
 	#carousel-home .item {
 		height: 500px;
 	}
+
 
 	/*Center folds below on the desktop*/
 	.fold-c, .footer-container {
