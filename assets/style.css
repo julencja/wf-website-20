@@ -15,11 +15,11 @@ a, a:hover, a:active, a:visited {
 }
 
 a:hover>img {
-	-webkit-filter: contrast(125%);
-	-moz-filter: contrast(125%);
-	-ms-filter: contrast(125%);
-	-o-filter: contrast(125%);
-	filter: contrast(125%);
+	-webkit-filter: contrast(110%);
+	-moz-filter: contrast(110%);
+	-ms-filter: contrast(110%);
+	-o-filter: contrast(110%);
+	filter: contrast(110%);
 }
 
 p {
