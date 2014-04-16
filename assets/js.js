@@ -8,11 +8,20 @@ $(document).ready(function() {
     	itemsTablet: [768,1],
     	itemsMobile : [479,1],
     	//Basic Speeds
-	    slideSpeed : 200,
+	    slideSpeed : 500,
 	    paginationSpeed : 800,
 	    rewindSpeed : 1000,
 	    //Autoplay
 	    autoPlay : false,
 	    stopOnHover : true,
 	  	});
+
+//Navigate to carousel item on thumbnail click on product page
+	var productOwl = $("#carousel-product").data('owlCarousel');
+	
+	$('#thumbs img').click(function(){
+		var which = $(this).data().index;
+		console.log(which);
+		productOwl.goTo(which-1);
+	});
 });
