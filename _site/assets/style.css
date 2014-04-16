@@ -261,12 +261,40 @@ header .logo img{
 }
 
 /*Product page*/
+#product {
+		background: #f9f7f7; /* Old browsers */
+background: -moz-linear-gradient(top, #f9f7f7 0%, #d3d3d3 99%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f7f7), color-stop(99%,#d3d3d3)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #f9f7f7 0%,#d3d3d3 99%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #f9f7f7 0%,#d3d3d3 99%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #f9f7f7 0%,#d3d3d3 99%); /* IE10+ */
+background: linear-gradient(to bottom, #f9f7f7 0%,#d3d3d3 99%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', endColorstr='#d3d3d3',GradientType=0 ); /* IE6-9 */
+		padding: 0 0 0 0;
+		position: relative;
+		margin-bottom: 0;
+	}
+
+#carousel-product {
+	width: 100%;
+	overflow: hidden;
+}
+#product-description {
+		text-align: left;
+		background: #fff;
+		padding: 3% 3%;
+		width: 100%;
+	}	
+
 #product-description h1, 
 #product-description h2,
 #product-description p{
-	text-align: left;
 	padding: 0 0 20px 0;
 	margin: 0 0 0 0;
+}
+
+#product-description p {
+	text-align: left;
 }
 #product .price {
 	font-size: 85%;
@@ -548,19 +576,7 @@ footer button {
 
 	/*Product page*/
 
-	#product {
-		background: #f9f7f7; /* Old browsers */
-background: -moz-linear-gradient(top, #f9f7f7 0%, #d3d3d3 99%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f7f7), color-stop(99%,#d3d3d3)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, #f9f7f7 0%,#d3d3d3 99%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, #f9f7f7 0%,#d3d3d3 99%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top, #f9f7f7 0%,#d3d3d3 99%); /* IE10+ */
-background: linear-gradient(to bottom, #f9f7f7 0%,#d3d3d3 99%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', endColorstr='#d3d3d3',GradientType=0 ); /* IE6-9 */
-		padding: 0 0 0 0;
-		position: relative;
-		margin-bottom: 0;
-	}
+	
 
 	#product #thumbs {
 		width: 80px;
