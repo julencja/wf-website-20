@@ -481,6 +481,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
 	font-weight: bold;
 	font-variant: small-caps;
 }
+
+/*Shopify page*/
+/*Shopify page fold-d*/
+	.fold-d {
+		float: left;
+		position: relative;
+		padding: 3em 1em;
+	}
+
+	.fold-d  .ui-block-a,
+	.fold-d .ui-block-b {
+		width: 100%;
+	}
 /*FOOTER*/
 .socialIcons {
 	text-align: center;
@@ -529,6 +542,10 @@ footer ul {
 footer button {
 	text-shadow: none !important;
 }
+
+
+
+
 /*MEDIA QUERIES*/
 /*smartphones*/
 @media all and (max-width: 40em) {
@@ -570,6 +587,7 @@ footer button {
 #carousel-home .item{
 		height: 450px;
   	}
+
 }
 
 /*laptop and wide screens*/
@@ -690,6 +708,7 @@ footer button {
 		margin: 0 auto;
 	}
 
+	
 	/* Call to action button, eg. SHOP NOW */
 	.ui-btn.call-to-action {
 		width: 14em;
@@ -758,5 +777,45 @@ footer button {
 		border-radius: 5px;
 		float: right;
 	}
+
+	/*Shopify page*/
+	/*Shopify page fold-d*/
+	.fold-d {
+		width: 60em;
+		left: 50%;
+		margin-left: -30em;
+		padding: 3em 0;
+	}
+
+	.fold-d  .ui-block-a {
+		width: 33.33%;
+	}
+	.fold-d .ui-block-b {
+		width: 66.66%;
+	}
+
+	#shopify-page-nav {
+		padding-top: 100px;
+		text-shadow: 0 0 0 rgba(0,0,0,0) !important;
+	}
+	#shopify-page-nav h3 {
+		text-align: left;
+		margin: 10px 0;
+	}
+
+	#shopify-page h1,
+	#shopify-page h2,
+	#shopify-page h3,
+	#shopify-page p,
+	#shopify-page ul {
+		text-align: left;
+		margin: 20px 0 10px 0;
+		padding: 0 0 0 0;
+	}
+
+	#shopify-page ul{
+		list-style-position: inside;
+	}
+
 
 }
