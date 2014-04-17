@@ -24,25 +24,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<!--Custom JS-->
 	<script src="assets/js.js" type="text/javascript"></script>
-
-
-	
 </head>
 <body>
-	<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=593381654006218";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 	<!--Home Page-->
-	<div data-role="page" id="cart" data-theme="a" class="">
+	<div data-role="page" id="contentPage" class="">
 		<!--Panel for navmenu-->
 		<nav data-role="panel" data-display="push" id="left-panel" class="hide-on-desktop">
 			<ul data-role="listview">
-				<li><a href="/products.html">Shop Bras</a></li>
+				<li><a href="#">Shop bras</a></li>
 				<li data-role="list-divider"><h2>Bra Fitting</h2></li>
 				<li><a href="#">Sizing</a></li>
 				<li><a href="#">Fit check</a></li>
@@ -56,220 +45,87 @@
 	    </nav><!-- /panel -->
 	    <!--Panel for shopping bag-->
 	    <nav data-role="panel" data-position="right" data-display="push" id="right-panel">
-	    	 <ul data-role="listview" data-icon="false">
+	    	 <ul data-role="listview" data-theme="a" data-icon="false">
             	<li data-icon="arrow-l"><a href="#" data-rel="close">Back to shopping</a></li>
             	<li data-icon="arrow-r"><a href="">Checkout</a></li>
         	</ul>
 	    </nav><!-- /panel -->
 			
 		<header data-role="header" data-position-fixed="true" class="hide-on-desktop">
-			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+			<a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false" class="hide-on-desktop">Menu</a>
 			<h1><a href="/" class="logo"><img src="assets/logo.png"></a></h1>
 			<a href="#right-panel" data-icon="shop" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Your bag</a>
+
 		</header> <!-- /header-->
 
-		<div class="ui-content" role="main">
+		<div class="ui-content">
 			<!--Navigation for screens 60em+-->
 			<nav class="ui-grid-solo hide-on-mobile" id="nav-desktop">
+				<div class="ui-grid-b" id="topmost-bar">
+					<span class="ui-block-a">Free Global Shipping</span>
+					<span class="ui-block-b">100 Days Free Returns</span>
+					<span class="ui-block-c">Exchange Size for Free Until 100% Happy</span>
+				</div>
     			<div class="ui-block-a">
     				<div class="linkgroup logo">
     					<a href="" class=""><img src="assets/logo.png" class=""></a>
 					</div>
     				<div class="linkgroup">
 						<a href="/products.html" class="active">shop sexy bras</a>
-						<a href="#">learn your bra size</a>
-						<a href="#">get free fit check</a>
-
+						<a href="#" title="Bra Size Calculator">learn your bra size</a>
+						<a href="#" title="Does my bra fit well?">Check your fit</a>
 					</div>
 					<div class="linkgroup floatright">
+						<a href="#">Customer Support</a>
 						<a href="#">about us</a>
 						<a href="#">blog</a>
 						<a href="#right-panel">your bag</a>
 					</div>
-
     			</div>
 			</nav>
 			<!--/navmenu-->
-			
-			
-			<section class="fold-a">
-				<h1>Shopping Bag</h1>
-				<form class="ui-grid-a ui-responsive" id="cart-form">
-					<div class="ui-block-a">
-						<div class="ui-bar">
-				        <table id="cart-table">
-				          <thead class="headerRow">
-				            <tr>
-				              <th></th>
-				              <th></th>
-				              <th>Name</th>
-				              <th>Size</th>
-				              <th>Price/Item</th>
-				              <th>Qty</th>
-				              
-				              <th>Subtotal</th>
-				            </tr>
-				          </thead>
-				          <tbody>
-					            <tr class="itemRow">
-					              <td class="item-remove">
-					                <a href="/cart/change?line=2&quantity=0">x</a>
-					              </td>					            	
-					              <td class="item-thumb">
-					                <a href="/products/nude-tshirt-bra" class="thumb" target="_blank"> 
-					                  <img src="assets/Packshots/arizona1.png" alt="Nude T-Shirt - 26DD" />
-					                </a>
-					              </td>
-					              <td class="item-name">
-					                  <a href="/products/nude-tshirt-bra">
-					                  Nude T-Shirt Bra 
-					                  </a>
-					              </td>
-					              <td class="item-size">
-					                26DD
-					              </td>
-					              <td class="item-price">
-					                $49.00
-					              </td>
-					              <td class="item-quantity">
-					                1
-					              </td>
-					              <td class="item-total">
-					                $49.00
-					              </td>
-					            </tr>
-					            <tr class="itemRow">
-					              <td class="item-remove">
-					                <a href="/cart/change?line=2&quantity=0">x</a>
-					              </td>
-					              <td class="item-thumb">
-					                <a href="/products/georgia-plunge-bra" class="thumb" target="_blank"> 
-					                  <img src="assets/Packshots/georgia1.png" alt="Georgia - 26DD" />
-					                </a>
-					              </td>
-					              <td class="item-name">
-					                  <a href="/products/georgia-plunge-bra">
-					                  Georgia Bra 
-					                  </a>
-					              </td>
-					              <td class="item-size">
-					                26DD
-					              </td>
-					              <td class="item-price">
-					                $69.00
-					              </td>
-					              <td class="item-quantity">
-					               1
-					              </td>
-
-					              <td class="item-total">
-					                $69.00
-					              </td>
-					            </tr>
-					          </tbody>
-					        </table>
-				        </div>
-					</div>
-					<div class="ui-block-b">
-						<div class="ui-bar" id="checkout-area">
-							<div class="shipping-info">
-								Free Global Shipping<br>
-								100 days Returns & Exchange Policy<br>
-								Made to order, receive by April 16th
-								
-							</div>
-							<table class="receipt">
-								<tr>
-									<td class="rightalign">Subtotal:</td>
-									<td>$128</td>
-								</tr>
-								<tr>
-									<td class="rightalign">Shipping:</td>	
-									<td>Free</td>
-								</tr>
-								<tr>
-									<td class="rightalign total">Total:</td>
-									<td class="total">$128</td>
-								</tr>
-							</table>
-        					<button href="#clientInfo" class="call-to-action" type="submit" name="checkout" value="Check out" >Checkout</button>
-        					<small>* Tax may apply</small>
-    					</div>
-					</div>
-				</form>
+			<section class="fold-d">
+				<div class="ui-grid-b">
+					<nav class="ui-block-a hide-on-mobile" id="shopify-page-nav">
+	    				<h3>Customer Support</h3>
+	    				<ul>
+	    					<li><a href="">Exchange & Returns</a></li>
+	    					<li><a href="">Shipping</a></li>
+	    					<li><a href="">Privacy Policy</a></li>
+	    					<li><a href="">Contact</a></li>
+	    				</ul>
+	    				<h3>Brafitting</h3>
+	    				<ul>
+	    					<li><a href="">Size advice</a></li>
+	    					<li><a href="">Brafitting guide</a></li>
+	    				</ul>
+	    				<h3>About Us</h3>
+	    				<ul>
+	    					<li><a href="">Our Story</a></li>
+	    					<li><a href="">Blog</a></li>
+	    				</ul>
+	    			</nav>
+    			<div class="ui-block-b" id="shopify-page">
+    				<!-- <div class="ui-bar"> -->
+    					<h1>Exchange & Returns</h1>
+    					<p>Do forage pug sartorial consequat farm-to-table, Truffaut whatever. Authentic gluten-free direct trade do, tousled disrupt semiotics qui ullamco. Single-origin coffee exercitation esse, tempor 8-bit quinoa mixtape twee nostrud semiotics incididunt cornhole.</p>
+    					<ul>
+    						<li>Shoreditch nesciunt squid </li>
+    						<li>Shoreditch nesciunt squid </li>
+    						<li>Shoreditch nesciunt squid </li>
+    					</ul> 
+    					<h2>Lorem Ipsum</h2>
+    					<p><a href="">Kampucha</a> ea PBR, slow-carb mollit nisi Cosby sweater et laborum cardigan master cleanse dolor. Craft beer stumptown 90's kitsch, master cleanse direct trade American Apparel officia actually cred minim PBR nihil Thundercats cray. Master cleanse VHS anim velit. Tempor Echo Park mixtape salvia aliquip whatever.</p>
+    					<img src="http://cdn.shopify.com/s/files/1/0330/4777/files/wellfitting-with-mom_medium.png?21861" class="floatright">
+    					<h2>Lorem Ipsum</h2>
+    					<p>Neutra placeat anim pug lo-fi, id Odd Future qui vegan do vero squid 90's High Life. Trust fund laboris pickled 3 wolf moon. Elit tattooed Shoreditch church-key proident veniam. Fap quis iPhone tousled. 90's twee typewriter Tumblr, assumenda plaid before they sold out reprehenderit Pitchfork duis bespoke aute craft beer normcore. Excepteur YOLO authentic cred, +1 consequat whatever. Thundercats selfies placeat Intelligentsia, farm-to-table mixtape aute cupidatat fashion axe four loko commodo assumenda.
+						</p>
+    				<!-- </div> -->
+    			</div>
+	    			
+				</div><!-- /grid-b -->
 			</section>
-			<!--If cart empty-->
-			<section class="fold-a">
-				<h1>Your Bag is Empty</h1>
-					<form class="ui-grid-a ui-responsive" id="cart-form">
-					<div class="ui-block-a">
-						<div class="ui-bar">
-						<h2>Others bought these bras:</h2>
-						<div class="ui-grid-c" id="product-gallery">
-						<figure class="ui-block-a">
-						<div class="ui-bar">
-							<a href="/product.html">
-								<div class="tag tag-bestseller"><span>Best<br>seller</span></div>
-								<img src="assets/Packshots/nude1.png">
-							</a>
-							<h3 class="product-name"><a href="">Black T-Shirt Bra</a>
-								<br>$69
-							</h3>
-							
-						</div>
-					</figure>
-					<figure class="ui-block-b">
-						<div class="ui-bar">
-							<a href="">
-								<div class="tag tag-new"><span>New</span></div>
-								<img src="assets/Packshots/black1.png">
-							</a>
-							<h3 class="product-name"><a href="">Black T-Shirt Bra</a>
-								<br>$69
-							</h3>
-						</div>
-					</figure>
-					<figure class="ui-block-c">
-						<div class="ui-bar">
-							<a href="">
-								<div class="tag tag-sale"><span>Last<br>chance</span></div>
-								<img src="assets/Packshots/georgia1.png">
-							</a>
-							<h3 class="product-name"><a href="">Black T-Shirt Bra</a>
-								<br>$69
-							</h3>
-						</div>
-					</figure>
-					<figure class="ui-block-d">
-						<div class="ui-bar">
-							<a href="">
-								<div class="tag tag-sexy"><span>Sexy</span></div>
-								<img src="assets/Packshots/arizona1.png">
-							</a>
-							<h3 class="product-name"><a href="">Black T-Shirt Bra</a>
-								<br>$69
-							</h3>
-						</div>
-					</figure>
-				</div>
-						</div>
-					</div>
-				
-					<div class="ui-block-b">
-						<div class="ui-bar" id="checkout-area">
-							<div class="shipping-info">
-								Free Global Shipping<br>
-								100 days Returns & Exchange Policy<br>
-								Made to order, receive by April 16th
-								
-							</div>
-    					</div>
-					</div>
-				</form>
-			</section>
-			
 		</div><!-- /ui-content-->
-
 
 		<footer data-role="footer"  data-theme="b">
 			<div class="footer-container">
