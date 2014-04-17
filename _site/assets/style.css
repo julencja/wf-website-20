@@ -15,11 +15,11 @@ a, a:hover, a:active, a:visited {
 }
 
 a:hover>img {
-	-webkit-filter: contrast(125%);
-	-moz-filter: contrast(125%);
-	-ms-filter: contrast(125%);
-	-o-filter: contrast(125%);
-	filter: contrast(125%);
+	-webkit-filter: contrast(110%);
+	-moz-filter: contrast(110%);
+	-ms-filter: contrast(110%);
+	-o-filter: contrast(110%);
+	filter: contrast(110%);
 }
 
 p {
@@ -385,6 +385,102 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f7f7', end
 	display: inline-block;
 	margin: 20px 0 0 0;
 }
+/*Cart page*/
+#cart #cart-form {
+	margin: 3em 0;
+	text-align: center;
+}
+#cart table {
+	width: 100%;
+	text-shadow: 0 0 0 rgba(0,0,0,0) !important;
+}
+
+#cart tr {
+	padding: 10px 0px;
+	text-align: left;
+}
+#cart th {
+	font-weight: 100;
+	text-transform: uppercase;
+	font-size: 75%;
+}
+#cart .itemRow {
+	padding: 10px 0;
+	border-bottom: solid 1px rgba(121, 121, 121, .3);
+
+}
+
+#cart-table th, 
+#cart-table td{
+	vertical-align: middle;
+	padding: 0 10px;
+}
+
+#cart .item-thumb {
+	width: 20%;
+	min-width: 50px;
+}
+#cart .item-thumb img {
+	width: 100%;
+}
+
+#cart .item-name {}
+
+#cart .item-size {}
+
+#cart .item-price {}
+
+#cart .item-quantity {
+	
+}
+
+
+#cart #checkout-area {
+	text-align: center;
+}
+
+
+#checkout-area  .shipping-info {
+	color: rgba(121, 121, 121, .9);
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 85%;
+	width: 50%;
+	margin: 0 auto 30px;
+	text-align: center;
+	border-top: solid 1px rgba(121, 121, 121, .5);
+	border-bottom: solid 1px rgba(121, 121, 121, .5);
+	padding: 10px 0;
+	text-shadow: 0 0 0 rgba(0,0,0,0);
+}
+#checkout-area .receipt{
+	width: 50%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-size: 85%;
+	font-weight: bold;
+	color: rgba(121, 121, 121, 1);
+}
+
+.receipt .rightalign {
+	width: 50%;
+	padding-left: 0;
+}
+
+.receipt td{
+	padding: 5px 0 5px 5%;
+}
+
+.rightalign {
+	font-weight: normal;
+	text-align: right;}
+
+.receipt .total {
+	color: rgba(121, 121, 121, .5);
+	font-size: 180%;
+	font-weight: bold;
+	font-variant: small-caps;
+}
 /*FOOTER*/
 .socialIcons {
 	text-align: center;
@@ -460,6 +556,12 @@ footer button {
 		width: 50% !important;
 		float: left;
 		clear: none;
+	}
+
+	#cart .ui-grid-a .ui-block-a,
+	#cart .ui-grid-a .ui-block-b {
+		width: 100%;
+		float: left;
 	}
 }
 
