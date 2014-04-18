@@ -817,5 +817,18 @@ footer button {
 		list-style-position: inside;
 	}
 
+	#shopify-page aside {
+		margin: 10px 0 10px 0;
+		width: 30%;
+		position: absolute;
+		left: 0;
+		opacity: .8;
+		text-align: right;
+		text-shadow: 0 0 0 rgba(0,0,0,0);
+		font-family: 'Playfair Display', Georgia, serif;
+		font-style: italic;
+		font-size: 120%;
+	}
+
 
 }
