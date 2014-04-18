@@ -23,7 +23,7 @@
 	<!--Custom style-->
 	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<!--Custom JS-->
-	<script src="assets/js.js" type="text/javascript"></script>
+	<script src="assets/js.js?foo=12" type="text/javascript"></script>
 </head>
 <body>
 	<!--Home Page-->
@@ -85,7 +85,7 @@
 			</nav>
 			<!--/navmenu-->
 			<section class="fold-d">
-				<div class="ui-grid-b">
+				<div class="ui-grid-b two-thirds">
 					<nav class="ui-block-a hide-on-mobile" id="shopify-page-nav">
 	    				<h3>Customer Support</h3>
 	    				<ul>
@@ -105,39 +105,156 @@
 	    					<li><a href="">Blog</a></li>
 	    				</ul>
 	    			</nav>
-    			<div class="ui-block-b" id="shopify-page" class="sizing-guide">
-    				<h1>How to pick the right bra size?</h1>
-<p>Finding a perfectly fitting bra is a process of trials and errors. To find a perfect fit with a minimum headache,
-use our bra size calculator below and take advantage of our <a href="">free unlimited size exchange policy</a>.</p>
+	    			<div class="ui-block-b" id="shopify-page" class="sizing-guide">
+	    				<h1>Bra Size Calculator</h1>
+						<p>Finding a perfectly fitting bra is a process of trials and errors. It's normal to try on a few sizes before deciding which fits best.</p>
+						<p>Use our bra size calculator as a starting point, and exchange sizes as many times as you need with our <a href="">free 100 days returns & exchange policy</a>.</p>
 
-<p>When you find your perfect size and style, your life will really change, as ours did!</p>
+						<p>When you find your perfect size and style, your life will really change, as ours did!</p>
 
-<h2>2 simple steps</h2>
-<p>Stand straight by a wall, your shoulder blades touching the surface, but comfortably relaxed.</p>
-<h3>1. Underbust</h3>
-<p>Exhale and pull a measuring tape quite snug around your ribcage, just under your bust, where the breast tissue ends. This is your underbust measurement:</p>
-<input type="range" name="underbustSlider" id="underbustSlider" data-highlight="true" min="0" max="100" value="31" step=".5">	
-<h3>2. Overbust</h3>
-<aside  class="hide-on-mobile">Now, still standing, imagine you’re just about to jump in a refreshing swimming pool. The water is warm, the sun is shining… Take a deep breath… </aside>
-<p>Pull the tape around the fullest part of your breasts, making sure the tape is parallel to the ground. Breasts are a soft tissue, so this time do not pull the tape too snug. This is your overbust measurement:</p>
-<input type="range" name="overbustSlider" id="overbustSlider" data-highlight="true" min="0" max="100" value="41" step=".5">		
-</ul>
-<p>Now, let’s pick a good starting point for your bra fitting at home:</p>
-<button id="calculateSize">Check your size </button>
-<p>You might be surprised with the size above. No worries! This size is just a starting point in the brafitting process. Once you get your new bra, we will help you find out how to proceed further.
+						<h2>Two simple steps</h2>
+						<p>Stand straight by a wall, your shoulder blades touching the surface, but comfortably relaxed.</p>
+						<!-- <form data-ajax="false"> -->
+						<div id="units">
+							<fieldset data-role="controlgroup" data-type="horizontal" class="theme-b">
+				        		<input type="radio" name="units" id="in" value="on" checked="checked">
+				        		<label for="in">In</label>
+				        		<input type="radio" name="units" id="cm" value="off">
+				        		<label for="cm">Cm</label>
+				    		</fieldset>
+			    		</div>
+						<h3>1. Underbust</h3>
+						<img src="http://cdn.shopify.com/s/files/1/0274/5447/t/7/assets/underbust.jpg?4264" class="howto">
+						<p>Exhale and pull a measuring tape quite snug around your ribcage, just under your bust, where the breast tissue ends. This is your underbust measurement:</p>
+						
+						<input type="range" name="underbustSlider" id="underbustSlider" data-highlight="true" min="0" max="100" value="31" step=".5">	
+						<h3>2. Overbust</h3>
+						<img src="http://cdn.shopify.com/s/files/1/0274/5447/t/7/assets/underbust.jpg?4264" class="howto">
+						<aside  class="hide-on-mobile">Now, still standing, imagine you’re just about to jump in a refreshing swimming pool. The water is warm, the sun is shining… Take a deep breath… </aside>
+						<p>Pull the tape around the fullest part of your breasts, making sure the tape is parallel to the ground. Breasts are a soft tissue, so this time do not pull the tape too snug. This is your overbust measurement:</p>
+						<input type="range" name="overbustSlider" id="overbustSlider" data-highlight="true" min="0" max="100" value="41" step=".5">		
+						</ul>
+						<p>Now, let’s pick a good starting point for your bra fitting at home:</p>
+						<button id="calculateSize" class="call-to-action">Check Result </button>
+						<aside  class="hide-on-mobile">
+							The industry standard bands are usually quite loose. The bands in our bras run much tighter, to provide better support for full bust.
+						</aside>
+						<!-- </form> -->
+						<div class="result inactive">
+							<div class="ui-grid-a">
+							    <div class="ui-block-a" id="snug">
+							    	<div class="ui-bar">
+								    	<h4>Snug Fit</h4>
+								    	<span>?</span>
+								    	<small>Recommended starting point<br> for full figure.</small>
+						    		</div>
+								</div>
+							    <div class="ui-block-b" id="comfy">
+							    	<div class="ui-bar">
+								    	<h4>Comfy Fit</h4>
+								    	<span>?</span>
+								    	<small>Recommended starting point<br> for athletic figure.</small>
+							    	</div>
+								</div>
+							</div>
+						</div>
 
-<aside class="hide-on-mobile">With real data from our clients, we discovered that women with the same measurements often find their best fit in different sizes. Why? Because we all have different breast shapes and our ribcages expand differently when we breathe.</aside>
+						<p>You might be surprised with the size above. No worries! This is just a starting point in the brafitting process. Once you get your new bra, we will help you find out how to proceed further.
 
-<p>If your breasts are full on the bottom, you’ll get different overbust readings with or without a bra, and that’s totally normal! For better accuracy in determining your starting size, you might take your overbust measurement while bending over 90 degrees, without a bra.</p>
+						<aside class="hide-on-mobile">With real data from our clients, we discovered that women with the same measurements often find their best fit in different sizes. Why? Because we all have different breast shapes and our ribcages expand differently when we breathe.</aside>
 
-
-<h2>Want to know more?</h2>
-<p>If you are confident that you know your perfect size, this approximate conversion chart might bcomee handy:</p>
+						<p>If your breasts are full on the bottom, you’ll get different overbust readings with or without a bra, and that’s totally normal! For better accuracy in determining your starting size, you might take your overbust measurement while bending over 90 degrees, without a bra.</p>
 
 
-
-    			</div>
-	    			
+						<h2>Bra size conversion chart</h2>
+						<p>If you are confident that you know your perfect size, this cup size conversion chart might become handy:</p><table id="size-chart">
+						<thead>
+							<tr>
+								<td>UK</td>
+								<td>USA</td>
+								<td>Wellfitting</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>A</td>
+								<td>A</td>
+								<td>A</td>
+							</tr>
+							<tr>
+								<td>B</td>
+								<td>B</td>
+								<td>B</td>
+							</tr>
+							<tr>
+								<td>C</td>
+								<td>C</td>
+								<td>C</td>
+							</tr>
+							<tr>
+								<td>D</td>
+								<td>D</td>
+								<td>D</td>
+							</tr>
+							<tr>
+								<td>DD</td>
+								<td>DD</td>
+								<td>DD (E)</td>
+							</tr>
+							<tr>
+								<td>E</td>
+								<td>DDD</td>
+								<td>DDD (F)</td>
+							</tr>
+							<tr>
+								<td>F</td>
+								<td>G</td>
+								<td>G</td>
+							</tr>
+							<tr>
+								<td>FF</td>
+								<td>H</td>
+								<td>H</td>
+							</tr>
+							<tr>
+								<td>G</td>
+								<td>I</td>
+								<td>I (HH)</td>
+							</tr>
+							<tr>
+								<td>GG</td>
+								<td></td>
+								<td>J</td>
+							</tr>
+							<tr>
+								<td>H</td>
+								<td></td>
+								<td>K</td>
+							</tr>
+							<tr>
+								<td>HH</td>
+								<td></td>
+								<td>L</td>
+							</tr>
+							<tr>
+								<td>J</td>
+								<td></td>
+								<td>M</td>
+							</tr>
+							<tr> 
+								<td>JJ</td>
+								<td></td>
+								<td>N</td>
+							</tr>
+							<tr>
+								<td>K</td>
+								<td></td>
+								<td>O</td>
+							</tr>
+						</tbody>		
+					</table>
+						<p>Treat this conversion chart as a starting point, not the ultimate size picking tool. Different lingerie manufacturers use different size standards, so a 32D with brand X is very often slightly different than a 32D with brand Y. That's why comparisons are just approximations.</p>
+	    			</div>
 				</div><!-- /grid-b -->
 			</section>
 		</div><!-- /ui-content-->
